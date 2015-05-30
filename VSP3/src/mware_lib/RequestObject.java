@@ -4,6 +4,10 @@ import java.io.Serializable;
 
 public class RequestObject implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8095215012620511694L;
 	private String objectRefName;
 	private String methodName;
 	private Object[] params;
