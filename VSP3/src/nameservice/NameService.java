@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import mware_lib.EntferntesReferenzmodul;
+import mware_lib.INameService;
 import mware_lib.Kommunikationsmodul;
 import mware_lib.Skeleton;
 
@@ -15,9 +16,9 @@ public class NameService implements INameService{
 	
 	public NameService(int port) throws IOException{
 		map = new HashMap<String, Object>();
-		EntferntesReferenzmodul.getInstance().put("nameservice", new Skeleton(this));
-		kommModul = new Kommunikationsmodul(port);
-		
+		EntferntesReferenzmodul refmodul = new EntferntesReferenzmodul(false);
+		refmodul.put(INameService.NAMESERVICENAME, new Skeleton(this));
+		kommModul = new Kommunikationsmodul(port, refmodul, false);		
 	}
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
@@ -33,8 +34,11 @@ public class NameService implements INameService{
 	}
 
 	
-	public Object resolve(String name, int i) {		
+	public Object resolve(String name) {		
 		return this.map.get(name);
 	}
-
+	
+	public void shutdown(){
+		kommModul.shutdown();
+	}
 }

@@ -18,7 +18,7 @@ public class Skeleton {
 				return m.invoke(object, params);				
 			}
 			else {
-				return new Exception("MWARE_LIB Function not available");
+				return new Exception("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
 			}
 		} catch (SecurityException e) {
 			return e;

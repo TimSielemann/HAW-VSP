@@ -6,6 +6,14 @@ import java.util.Map;
 public class Util {
 	 public static Map<Class<?>, Class<?>> PRIMITIVESMAP = getMap();
 	 
+	 public static void println(String string, boolean debug){
+		 if (debug){
+			System.out.println(string); 
+		 }
+	 }
+	 
+	 	 
+	 
 	 private static Map<Class<?>, Class<?>> getMap(){
 		 Map<Class<?>, Class<?>> map= new HashMap<Class<?>, Class<?>>();
 	     map.put(boolean.class, Boolean.class);
@@ -19,4 +27,6 @@ public class Util {
 	     map.put(void.class, Void.class);		 
 		 return map;
 	 }
+	 
+	 
 }
