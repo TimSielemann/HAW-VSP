@@ -1,7 +1,8 @@
 package accessor_one;
 
-import nameservice.ObjectReference;
+
 import mware_lib.Kommunikationsmodul;
+import mware_lib.ObjectReference;
 
 public class ClassOneImplBaseStub extends ClassOneImplBase {
 
@@ -13,7 +14,7 @@ public class ClassOneImplBaseStub extends ClassOneImplBase {
 	@Override
 	public String methodOne(String param1, int param2) throws SomeException112 {
 		Object[] params = {param1,param2};
-		return Kommunikationsmodul.send(this.objectRef,"methodOne",params);
+		Object result= Kommunikationsmodul.send(this.objectRef,"methodOne",params);
 	}
 
 }

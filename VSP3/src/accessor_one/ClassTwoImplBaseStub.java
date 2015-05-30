@@ -1,6 +1,6 @@
 package accessor_one;
 
-import nameservice.ObjectReference;
+import mware_lib.ObjectReference;
 import mware_lib.Kommunikationsmodul;
 
 public class ClassTwoImplBaseStub extends ClassTwoImplBase {
