@@ -1,8 +1,10 @@
 package mware_lib;
 
 import java.io.IOException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.net.UnknownHostException;
 
 public class ReceiveThread extends Thread {
 	
@@ -56,7 +58,11 @@ public class ReceiveThread extends Thread {
 	}
 	
 	public String getAdress(){
-		return socket.getInetAddress().getHostAddress();
+		try {
+			return InetAddress.getLocalHost().getCanonicalHostName();
+		} catch (UnknownHostException e) {
+			throw new MWareException("Hostname kann nicht gefunden werden... ", e);
+		}
 	}
 
 	public void shutdown(){

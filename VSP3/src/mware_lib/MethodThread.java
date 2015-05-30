@@ -22,19 +22,19 @@ public class MethodThread extends Thread {
 		try {
 			ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 			Object o = ois.readObject();
-			ois.close();
+			//ois.close();
 			if (o instanceof RequestObject){
 				RequestObject request = (RequestObject) o;
 				Skeleton skeleton  = refModul.getSkeleton(request.getObjectRefName());
 				Object result = skeleton.doMethodCall(request.getMethodName(), request.getParams());
 				ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 				oos.writeObject(result);
-				oos.close();
+				//oos.close();
 			}
 			else {
 				ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
 				oos.writeObject(new MWareException("MWARE_LIB: Wrong request Type"));
-				oos.close();
+				//oos.close();
 			}
 			Util.println(this + ": Method Thread ausgeführt", debug);			
 		} catch (IOException e) {

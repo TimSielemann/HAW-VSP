@@ -16,9 +16,9 @@ public class NameService implements INameService{
 	
 	public NameService(int port) throws IOException{
 		map = new HashMap<String, Object>();
-		EntferntesReferenzmodul refmodul = new EntferntesReferenzmodul(false);
+		EntferntesReferenzmodul refmodul = new EntferntesReferenzmodul(true);
 		refmodul.put(INameService.NAMESERVICENAME, new Skeleton(this));
-		kommModul = new Kommunikationsmodul(port, refmodul, false);		
+		kommModul = new Kommunikationsmodul(port, refmodul, true);		
 	}
 	
 	public static void main(String[] args) throws NumberFormatException, IOException {
