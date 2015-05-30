@@ -21,7 +21,7 @@ public class BankServer {
 			throw new Exception("Falsche Versionsnummmer");
 		}
 	}
-	//accessor_one ClassTwo
+	//accessor_one ClassTwo 
 	public int methodOne(double param1) throws Exception {
 		if(!(param1<0)){
 		this.betrag+=param1;
