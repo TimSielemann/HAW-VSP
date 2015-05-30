@@ -18,16 +18,16 @@ public class Skeleton {
 				return m.invoke(object, params);				
 			}
 			else {
-				return new Exception("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
+				return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
 			}
 		} catch (SecurityException e) {
-			return e;
+			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
 		} catch (IllegalAccessException e) {
-			return e;
+			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
 		} catch (IllegalArgumentException e) {
-			return e;
+			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
 		} catch (InvocationTargetException e) {
-			return e;
+			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
 		}
 		
 	}
@@ -35,16 +35,20 @@ public class Skeleton {
 	private Method getMethod(String methodName, Object[] params) {
 		for (Method method : object.getClass().getMethods()) {
 		      Class<?>[] paramTypes = method.getParameterTypes();
-		      if (methodName.equals(method.getName()) && 
-		          ((params == null && paramTypes == null) || 
-		          (!(params == null || paramTypes == null || paramTypes.length != params.length) &&
-		          allParamsSameType(paramTypes, params))))
+		      //Wenn Methodenname und alle Methodenparameter verfügbar sind
+		      if (methodName.equals(method.getName()) && allParamsSameType(paramTypes, params))
 		    	  return method;
 		 }
 		return null;
 	}
 	
 	private boolean allParamsSameType(Class<?>[] paramTypes, Object[] params){
+		if (params == null && paramTypes == null){
+			return true;
+		}
+		if (params == null || paramTypes == null || paramTypes.length != params.length){
+			return false;
+		}
 		for (int i = 0; i < params.length; ++i) {
 	        if (!paramTypes[i].isAssignableFrom(params[i].getClass()) && !(paramTypes[i].isPrimitive() && getWrapperFor(paramTypes[i]).isAssignableFrom(params[i].getClass()))) {
 	          return false;
