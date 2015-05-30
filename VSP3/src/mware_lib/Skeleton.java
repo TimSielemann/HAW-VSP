@@ -12,7 +12,6 @@ public class Skeleton {
 	}
 	
 	public Object doMethodCall(String method, Object[] params){
-
 		try {
 			Method m = getMethod(method, params);// object.getClass().getMethod(method, classes);
 			if (m != null){
@@ -34,25 +33,31 @@ public class Skeleton {
 	}
 
 	private Method getMethod(String methodName, Object[] params) {
-		methodLoop: for (Method method : object.getClass().getMethods()) {
-		    if (!methodName.equals(method.getName())) {
-		        continue;
-		      }
+		for (Method method : object.getClass().getMethods()) {
 		      Class<?>[] paramTypes = method.getParameterTypes();
-		      if (params == null && paramTypes == null) {
-		        return method;
-		      } else if (params == null || paramTypes == null
-		          || paramTypes.length != params.length) {
-		        continue;
-		      }
-
-		      for (int i = 0; i < params.length; ++i) {
-		        if (!paramTypes[i].isAssignableFrom(params[i].getClass())) {
-		          continue methodLoop;
-		        }
-		      }
-		      return method;
-		    }
+		      if (methodName.equals(method.getName()) && 
+		          ((params == null && paramTypes == null) || 
+		          (!(params == null || paramTypes == null || paramTypes.length != params.length) &&
+		          allParamsSameType(paramTypes, params))))
+		    	  return method;
+		 }
 		return null;
+	}
+	
+	private boolean allParamsSameType(Class<?>[] paramTypes, Object[] params){
+		for (int i = 0; i < params.length; ++i) {
+	        if (!paramTypes[i].isAssignableFrom(params[i].getClass()) && !(paramTypes[i].isPrimitive() && getWrapperFor(paramTypes[i]).isAssignableFrom(params[i].getClass()))) {
+	          return false;
+	        }
+	     }
+		return true;
+	}
+
+	private Class<? extends Object> getWrapperFor(Class<?> class1) {
+		Class<? extends Object> wrapperclass = Util.PRIMITIVESMAP.get(class1);
+		if (wrapperclass == null){
+			return class1;
+		}
+		return wrapperclass;
 	}
 }

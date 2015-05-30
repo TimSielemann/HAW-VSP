@@ -33,7 +33,7 @@ public class NameService implements INameService{
 	}
 
 	
-	public Object resolve(String name) {		
+	public Object resolve(String name, int i) {		
 		return this.map.get(name);
 	}
 
