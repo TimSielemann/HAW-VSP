@@ -31,7 +31,10 @@ public class NameService implements INameService {
 		 if (ret instanceof Exception){
 			 throw new MWareException("Fehler im Namensdienst", (Exception)ret);
 		 }
-		 return ret;
+		 if (ret == null){
+			 return null;
+		 }
+		 return new RawObject((ObjectReference)ret, kommModul);
 	}
 
 }

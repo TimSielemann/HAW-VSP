@@ -21,13 +21,13 @@ public class Skeleton {
 				return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
 			}
 		} catch (SecurityException e) {
-			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
+			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar", e );
 		} catch (IllegalAccessException e) {
-			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
+			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar", e );
 		} catch (IllegalArgumentException e) {
-			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
+			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar", e );
 		} catch (InvocationTargetException e) {
-			return new MWareException("Funktion " + method + " mit Paramaetern " + params + " nicht verfügbar" );
+			return e.getCause();
 		}
 		
 	}

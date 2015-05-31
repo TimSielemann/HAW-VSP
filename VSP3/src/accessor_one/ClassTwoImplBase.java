@@ -7,9 +7,8 @@ public abstract class ClassTwoImplBase {
 
 	public abstract double methodTwo() throws SomeException112;
 
-	public static ClassTwoImplBase narrowCast(Object rawObjectRef, int port,
-			EntferntesReferenzmodul refmodul, boolean debug) {
-		return new ClassTwoImplBaseStub(rawObjectRef,port,refmodul,debug);
+	public static ClassTwoImplBase narrowCast(Object rawObjectRef) {
+		return new ClassTwoImplBaseStub(rawObjectRef);
 
 	}
 

@@ -10,9 +10,8 @@ public abstract class ClassOneImplBase {
 	public abstract double methodTwo(String param1, double param2)
 			throws SomeException112, SomeException304;
 
-	public static ClassOneImplBase narrowCast(Object rawObjectRef, int port,
-			EntferntesReferenzmodul refmodul, boolean debug) {
-		return new ClassOneImplBaseStub(rawObjectRef,port,refmodul,debug);
+	public static ClassOneImplBase narrowCast(Object rawObjectRef) {
+		return new ClassOneImplBaseStub(rawObjectRef);
 	}
 
 }
