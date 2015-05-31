@@ -17,7 +17,7 @@ public class NameServiceTest {
 		ns.rebind(new Object(), "Tim");
 		Object resolved = ns.resolve("Tim");
 		System.out.println("Resolved Object: " + resolved);
-		
+		broker.shutDown();
 	}
 
 }
