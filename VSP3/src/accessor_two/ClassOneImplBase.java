@@ -1,7 +1,5 @@
 package accessor_two;
 
-import mware_lib.EntferntesReferenzmodul;
-
 public abstract class ClassOneImplBase {
 
 	public abstract double methodOne(String param1, double param2)

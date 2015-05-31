@@ -4,13 +4,15 @@ public class RawObject {
 	
 	private Kommunikationsmodul kommModul;
 	private ObjectReference objectReference;
+	private boolean debug;
 	
-	public RawObject(ObjectReference ret, Kommunikationsmodul kommModul) {
+	public RawObject(ObjectReference ret, Kommunikationsmodul kommModul, boolean debug) {
 		this.objectReference = (ObjectReference)ret;
 		this.kommModul = kommModul;
+		this.setDebug(debug);
 	}
 
-	public Kommunikationsmodul getKommModul() {
+		public Kommunikationsmodul getKommModul() {
 		return kommModul;
 	}
 
@@ -24,6 +26,14 @@ public class RawObject {
 
 	public void setObjectReference(ObjectReference objectReference) {
 		this.objectReference = objectReference;
+	}
+
+	public boolean isDebug() {
+		return debug;
+	}
+
+	public void setDebug(boolean debug) {
+		this.debug = debug;
 	}
 
 }

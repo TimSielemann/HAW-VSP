@@ -34,7 +34,7 @@ public class NameService implements INameService {
 		 if (ret == null){
 			 return null;
 		 }
-		 return new RawObject((ObjectReference)ret, kommModul);
+		 return new RawObject((ObjectReference)ret, kommModul,debug);
 	}
 
 }
