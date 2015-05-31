@@ -37,7 +37,7 @@ public class ReceiveThread extends Thread {
 	
 	public void run(){
 		
-		while (!interrupted()){
+		while (!this.isInterrupted()){
 			try {
 				Socket userSocket = socket.accept();
 				new MethodThread(userSocket, refmodul, debug).start();
@@ -45,9 +45,7 @@ public class ReceiveThread extends Thread {
 				if (! socket.isClosed()){
 					throw new MWareException("Fehler am Kommunikationssocket", e);					
 				}
-				else {
-					Util.println(this + ": Receive Thread shutdown...", debug);
-				}
+				this.interrupt();
 			}
 			
 		}
@@ -66,10 +64,12 @@ public class ReceiveThread extends Thread {
 	}
 
 	public void shutdown(){
+		Util.println(this + ": Receive Thread shutdown...", debug);
 		try {
-			socket.close();
+			socket.close();			
 		} catch (IOException e) {
 			throw new MWareException("Kommunikationensocket konnte nicht geschlossen werden", e);
 		}
+		this.interrupt();
 	}
 }

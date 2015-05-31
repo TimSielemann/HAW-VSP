@@ -29,6 +29,9 @@ public class Kommunikationsmodul {
 			Object returnObj = ois.readObject();
 			socket.close();
 			Util.println(this + ": Rückgabewert: " + returnObj, debug);
+			if (returnObj instanceof MWareException){
+				throw (MWareException)returnObj;
+			}
 			return returnObj;
 		} catch (IOException e) {
 			if (socket != null){
