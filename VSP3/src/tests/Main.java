@@ -219,6 +219,18 @@ public class Main {
 			System.out.println("Error in Async");
 		}
 		System.out.println("-----------------------------------------------------------------------------------");
+		try {
+			if (client.testNull()==null){
+				System.out.println("Successful");
+			}
+			else {
+				System.out.println("Error in testNull");
+			}
+		} catch (SomeException112 e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("-----------------------------------------------------------------------------------");
 		
 		
 		serverA.shutdown();

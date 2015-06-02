@@ -14,12 +14,15 @@ public class ClassTwoAccessorOneAsync extends ClassTwoImplBase {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		Werkzeug.printResult(this.getClass().getName(), this.toString(), "methodOne", param1, 0);
 		return 0;
 	}
 
 	@Override
 	public double methodTwo() throws SomeException112 {
 		// TODO Auto-generated method stub
+		Werkzeug.printResult(this.getClass().getName(), this.toString(), "methodTwo", 100);
+		
 		return 100;
 	}
 

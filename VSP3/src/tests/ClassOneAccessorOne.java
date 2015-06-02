@@ -13,9 +13,12 @@ public class ClassOneAccessorOne extends ClassOneImplBase {
 	@Override
 	public String methodOne(String param1, int param2) throws SomeException112 {
 		if (param2 < 0){
+			Werkzeug.printError(this.getClass().getName(), this.toString(),"methodOne", param1, param2, SomeException112.class.getName(), "param2 < 0");
 			throw new SomeException112("param2 < 0");
 		}
-		return param1 + param2;
+		String result=param1+param2;
+		Werkzeug.printResult(this.getClass().getName(), this.toString(), "methodOne", param1, param2, result);
+		return result;
 	}
 
 //	//accessor_one ClassTwo 
