@@ -1,5 +1,16 @@
 package mware_lib;
-
+/**
+ * Nameservice Stub welches vom Object-Broker erzeugt wird.
+ * 
+ * Führt für den Benutzer unsichtbar anfragen an den Entfernten Namensdienst
+ * 
+ * (siehe Entwurf)
+ * 
+ * Komponente: NameserviceStub
+ * 
+ * @author Tim
+ *
+ */
 public class NameService implements INameService {
 	
 	private String serviceHost;

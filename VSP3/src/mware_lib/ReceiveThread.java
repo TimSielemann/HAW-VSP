@@ -5,7 +5,20 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
-
+/**
+ * Der Receive Thread ist für den Verbindungsaufbau für Methodenanfragen die für diesen Broker gesendet werden verantwortlich.
+ * 
+ * Es versucht am übergebenen Port ein ServerSocket zu erstellen, ist dieser belegt nimmt er den nächsten Port
+ * 
+ * Sobald eine Verbindung aufgebaut ist, wird ein Method-Thread gestartet der asynchron ausgeführt wird
+ * 
+ * (siehe Entwurf)
+ * 
+ * Komponente: Kommunikationsmodul
+ * 
+ * @author Tim
+ *
+ */
 public class ReceiveThread extends Thread {
 	
 	private static final int MAXPORT = 65535;

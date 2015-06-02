@@ -1,6 +1,11 @@
 package mware_lib;
 
-
+/**
+ * Exception für Fehler innerhalb der Middleware
+ * (siehe Entwurf)
+ * @author Tim
+ *
+ */
 public class MWareException extends RuntimeException {
 
 	/**

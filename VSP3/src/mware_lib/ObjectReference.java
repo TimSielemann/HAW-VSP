@@ -1,7 +1,16 @@
 package mware_lib;
 
 import java.io.Serializable;
-
+/**
+ * Serialisierbares Object zum Referenzieren eines entfernten Objektes.
+ * 
+ * Wird an den Namensdienst gesendet oder vom Namensdienst erhalten (geschachtelt in einem RAW-Object)
+ * 
+ * Komponente: MWareLib
+ * 
+ * @author Tim
+ *
+ */
 public class ObjectReference implements Serializable {
 	
 	/**

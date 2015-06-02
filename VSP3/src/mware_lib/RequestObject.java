@@ -1,7 +1,12 @@
 package mware_lib;
 
 import java.io.Serializable;
-
+/**
+ * Kapselt die Methodenaufrufinformationen
+ * 
+ * @author Tim
+ * Komponente: Kommunikationsmodul
+ */
 public class RequestObject implements Serializable{
 	
 	/**

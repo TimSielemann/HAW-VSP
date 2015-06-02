@@ -3,6 +3,12 @@ package mware_lib;
 
 
 //- Front-End der Middleware -
+/**
+ * Schnittstelle nach Entwurf
+ * @author Tim
+ *
+ * Komponente: MWare_Lib
+ */
 public class ObjectBroker { 
 
 	private static final int PORT = 12345;
@@ -26,11 +32,11 @@ public class ObjectBroker {
 	
 
 	// Das hier zurückgelieferte Objekt soll der zentrale Einstiegspunkt
-	// der Middleware aus Applikationssicht sein.
-	// Parameter: Host und Port, bei dem die Dienste (hier: Namensdienst)
-	// kontaktiert werden sollen. Mit debug sollen Test-
-	// ausgaben der Middleware ein- oder ausgeschaltet werden
-	// können.
+		// der Middleware aus Applikationssicht sein.
+		// Parameter: Host und Port, bei dem die Dienste (hier: Namensdienst)
+		// kontaktiert werden sollen. Mit debug sollen Test-
+		// ausgaben der Middleware ein- oder ausgeschaltet werden
+		// können.
 	public static ObjectBroker init(String serviceHost,
 	int listenPort, boolean debug) {  
 		return new ObjectBroker(serviceHost, listenPort, debug);

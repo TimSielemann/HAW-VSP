@@ -3,6 +3,12 @@ package mware_lib;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/**
+ * Allgemeines Skeleton für den Aufruf an einem Entfernten Objekt
+ * @author Tim
+ * 
+ * Komponente: mware_lib
+ */
 public class Skeleton {
 	
 	private Object object;
@@ -11,6 +17,12 @@ public class Skeleton {
 		this.object = object;
 	}
 	
+	/**
+	 * Ruft über Reflections die übergebene Methode anhand ihres Namens und ihrer Parameter auf
+	 * @param method
+	 * @param params
+	 * @return
+	 */
 	public Object doMethodCall(String method, Object[] params){
 		try {
 			Method m = getMethod(method, params);// object.getClass().getMethod(method, classes);
@@ -31,7 +43,13 @@ public class Skeleton {
 		}
 		
 	}
-
+	
+	/**
+	 * Sucht die richtige Methode anhand des Namens und der Parameter
+	 * @param methodName
+	 * @param params
+	 * @return
+	 */
 	private Method getMethod(String methodName, Object[] params) {
 		for (Method method : object.getClass().getMethods()) {
 		      Class<?>[] paramTypes = method.getParameterTypes();
@@ -42,6 +60,12 @@ public class Skeleton {
 		return null;
 	}
 	
+	/**
+	 * Überprüft ob alle Parameter den selben Namen haben
+	 * @param paramTypes
+	 * @param params
+	 * @return
+	 */
 	private boolean allParamsSameType(Class<?>[] paramTypes, Object[] params){
 		if (params == null && paramTypes == null){
 			return true;
@@ -56,7 +80,12 @@ public class Skeleton {
 	     }
 		return true;
 	}
-
+	
+	/**
+	 * Holt die Wrappeklasse für die primitiven Datentypen
+	 * @param class1
+	 * @return
+	 */
 	private Class<? extends Object> getWrapperFor(Class<?> class1) {
 		Class<? extends Object> wrapperclass = Util.PRIMITIVESMAP.get(class1);
 		if (wrapperclass == null){

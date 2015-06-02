@@ -1,5 +1,9 @@
 package mware_lib;
-
+/**
+ * Kapselt eine Entfernte Objectreferenz 
+ * @author Tim
+ *
+ */
 public class RawObject {
 	
 	private Kommunikationsmodul kommModul;

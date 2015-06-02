@@ -5,7 +5,16 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
-
+/**
+ * Modul für die Kommunikation zwischen den Entfernt laufenden Middleware anwendungen
+ * 
+ * (siehe Entwurf)
+ * 
+ * Dieses Modul ist für das versenden von Daten zuständig und die erzeugung eines Receive Threads, an den die Anfragenbearbeitung delegiert wird
+ * @author Tim
+ *
+ * Komponente: Kommunikationsmodul
+ */
 public class Kommunikationsmodul {
 	
 	public ReceiveThread thread;
@@ -17,7 +26,13 @@ public class Kommunikationsmodul {
 		this.debug = debug;
 		Util.println(this + ": gestartet", debug);
 	}
-	
+	/**
+	 * Versenden eines Methodenaufrufs an ein entferntes Objekt
+	 * @param ref
+	 * @param method
+	 * @param params
+	 * @return
+	 */
 	public Object send(ObjectReference ref, String method, Object[] params) {
 		Util.println(this + ": Versende an " + ref + " methode " + method + " params " + params, debug);
 		Socket socket = null;

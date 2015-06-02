@@ -3,6 +3,13 @@ package mware_lib;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Werkzeug klasse
+ * @author Tim
+ * 
+ * Komponente: mware_lib
+ *
+ */
 public class Util {
 	 public static Map<Class<?>, Class<?>> PRIMITIVESMAP = getMap();
 	 

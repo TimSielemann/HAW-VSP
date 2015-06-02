@@ -4,7 +4,14 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-
+/**
+ * Für das Asynchrone ausführen von entfernten Methodenaufrufen
+ * 
+ * (siehe Entwurf)
+ * @author Tim
+ *
+ * Komponente: Kommunikationsmodul
+ */
 public class MethodThread extends Thread {
 	
 	private Socket socket;
@@ -16,7 +23,10 @@ public class MethodThread extends Thread {
 		this.refModul = refmodul;
 		this.debug = debug;
 	}
-
+	
+	/**
+	 * Führt den Methodenaufruf per Skeleton auf und sendet das Ergebnis zurück
+	 */
 	public void run(){
 		Util.println(this + ": Method Thread gestartet", debug);
 		try {

@@ -9,6 +9,18 @@ import mware_lib.INameService;
 import mware_lib.Kommunikationsmodul;
 import mware_lib.Skeleton;
 
+/**
+ * Autonomer Namensdienst der Middleware
+ * 
+ * Nutzt den Entfernten Middlewareaufruf mit einem festgelegten Namen
+ * 
+ * Greift auf Funktionen der MWare_lib zurück
+ *  
+ * (siehe Entwurf)
+ * @author Tim
+ *
+ * Komponente: NameService
+ */
 public class NameService implements INameService{
 	
 	private Map<String, Object> map;
