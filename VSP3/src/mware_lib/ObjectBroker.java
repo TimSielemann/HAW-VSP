@@ -11,7 +11,7 @@ package mware_lib;
  */
 public class ObjectBroker { 
 
-	private static final int PORT = 12345;
+	private static final int PORT = 53627;
 	
 	private NameService nameService;
 	private Kommunikationsmodul kommunikationsmodul;
