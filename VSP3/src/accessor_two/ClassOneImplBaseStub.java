@@ -14,6 +14,9 @@ public class ClassOneImplBaseStub extends ClassOneImplBase {
 	@Override
 	public double methodOne(String param1, double param2)
 			throws SomeException112 {
+		if(param1==null){
+			param1="defaultNull";
+		}
 		Object[] params = { param1, param2 };
 		Object result = rawObject.getKommModul().send(
 				this.rawObject.getObjectReference(), "methodOne", params);
@@ -27,6 +30,9 @@ public class ClassOneImplBaseStub extends ClassOneImplBase {
 	@Override
 	public double methodTwo(String param1, double param2)
 			throws SomeException112, SomeException304 {
+		if(param1==null){
+			param1="defaultNull";
+		}
 		Object[] params = { param1, param2 };
 		Object result = rawObject.getKommModul().send(
 				this.rawObject.getObjectReference(), "methodTwo", params);

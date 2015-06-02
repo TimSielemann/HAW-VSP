@@ -134,7 +134,7 @@ public class Client {
 	public Object testNull() throws SomeException112 {
 		Object raw = broker.getNameService().resolve("Null");
 		ClassOneImplBase base = ClassOneImplBase.narrowCast(raw);
-		String a = null;
-		return base.methodOne(a, 21);
+		
+		return base.methodOne(null, 1);
 	}
 }

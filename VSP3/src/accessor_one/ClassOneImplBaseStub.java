@@ -13,7 +13,11 @@ public class ClassOneImplBaseStub extends ClassOneImplBase {
 
 	@Override
 	public String methodOne(String param1, int param2) throws SomeException112 {
+		if(param1==null){
+			return null;
+		}
 		Object[] params = { param1, param2 };
+		
 		Object result = rawObject.getKommModul().send(
 				this.rawObject.getObjectReference(), "methodOne", params);
 		if (result instanceof SomeException112) {
