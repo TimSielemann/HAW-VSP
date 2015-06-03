@@ -219,6 +219,9 @@ public class Main {
 			System.out.println("Error in Async");
 		}
 		System.out.println("-----------------------------------------------------------------------------------");
+		
+		System.out.println("Test: Null");
+		
 		try {
 			if (client.testNull()==null){
 				System.out.println("Successful");
