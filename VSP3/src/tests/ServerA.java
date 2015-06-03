@@ -25,4 +25,13 @@ public class ServerA extends Thread {
 	public void shutdown(){
 		broker.shutDown();
 	}
+	
+	public static void main(String[] args){
+		if (args.length < 3){
+			args = new String[]{"localhost", "25645", "false"};
+		}
+		
+		ServerA serverA = new ServerA(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[2]));
+		serverA.start();
+	}
 }

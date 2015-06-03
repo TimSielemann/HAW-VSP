@@ -6,18 +6,18 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 
 /**
- * Modul für die Kommunikation zwischen den Entfernt laufenden Middleware anwendungen
+ * Modul fï¿½r die Kommunikation zwischen den Entfernt laufenden Middleware anwendungen
  * 
  * (siehe Entwurf)
  * 
- * Dieses Modul ist für das versenden von Daten zuständig und die erzeugung eines Receive Threads, an den die Anfragenbearbeitung delegiert wird
+ * Dieses Modul ist fï¿½r das versenden von Daten zustï¿½ndig und die erzeugung eines Receive Threads, an den die Anfragenbearbeitung delegiert wird
  * @author Tim
  *
  * Komponente: Kommunikationsmodul
  */
 public class Kommunikationsmodul {
 	
-	public ReceiveThread thread;
+	private ReceiveThread thread;
 	private boolean debug;
 	
 	public Kommunikationsmodul(int port, EntferntesReferenzmodul refmodul, boolean debug){
@@ -43,7 +43,7 @@ public class Kommunikationsmodul {
 			ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());			
 			Object returnObj = ois.readObject();
 			socket.close();
-			Util.println(this + ": Rückgabewert: " + returnObj, debug);
+			Util.println(this + ": Rï¿½ckgabewert: " + returnObj, debug);
 			if (returnObj instanceof MWareException){
 				throw (MWareException)returnObj;
 			}
@@ -65,7 +65,7 @@ public class Kommunikationsmodul {
 					//Dann wohl schon geschlossen...
 				}
 			}
-			return new MWareException("Objekttyp der Rückgabe nicht vorhanden", e);
+			return new MWareException("Objekttyp der Rï¿½ckgabe nicht vorhanden", e);
 		}		
 	}
 	

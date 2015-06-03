@@ -11,16 +11,20 @@ public class Main {
 	public static void main(String[] args){
 		
 		if (args.length < 3){
-			args = new String[]{"localhost", "25645", "false"};
+			args = new String[]{"localhost", "25645", "true", "false"};
+		}
+		ServerA serverA = null;
+		ServerB serverB = null;
+		if (Boolean.parseBoolean(args[2])){
+			serverA = new ServerA(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[3]));
+			serverA.start();
+			
+			serverB = new ServerB(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[3]));
+			serverB.start();
+			
 		}
 		
-		ServerA serverA = new ServerA(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[2]));
-		serverA.start();
-		
-		ServerB serverB = new ServerB(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[2]));
-		serverB.start();
-		
-		Client client = new Client(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[2]));
+		Client client = new Client(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[3]));
 		System.out.println("Starting Test...");
 		
 		System.out.println("########################################");
@@ -235,9 +239,10 @@ public class Main {
 		}
 		System.out.println("########################################");
 		
-		
-		serverA.shutdown();
-		serverB.shutdown();
+		if (Boolean.parseBoolean(args[2])){
+			serverA.shutdown();
+			serverB.shutdown();
+		}
 		client.shutdown();
 	}
 }
