@@ -234,7 +234,7 @@ public class Main {
 				System.out.println("Error in testNull");
 			}
 		} catch (SomeException112 e) {
-			// TODO Auto-generated catch block
+			System.out.println("Error in testNull");
 			e.printStackTrace();
 		}
 		System.out.println("########################################");
