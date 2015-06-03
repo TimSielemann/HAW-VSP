@@ -23,7 +23,7 @@ public class Main {
 		Client client = new Client(args[0], Integer.parseInt(args[1]), Boolean.parseBoolean(args[2]));
 		System.out.println("Starting Test...");
 		
-		
+		System.out.println("########################################");
 		System.out.println("Test: classOneAccessorOneMethodOne");
 		
 		try {
@@ -38,7 +38,7 @@ public class Main {
 			System.out.println("Error in classOneAccessorOneMethodOne");
 			e.printStackTrace();
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		System.out.println("Test: classOneAccessorOneMethodOneError");
 		boolean errorThrown = false;
@@ -53,7 +53,7 @@ public class Main {
 		else {
 			System.out.println("Error in classOneAccessorOneMethodOneError");
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		
 		
@@ -71,7 +71,7 @@ public class Main {
 			System.out.println("Error in classOneAccessorTwoMethodOne");
 			e.printStackTrace();
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		System.out.println("Test: classOneAccessorTwoMethodOneError");
 		errorThrown = false;
@@ -86,7 +86,7 @@ public class Main {
 		else {
 			System.out.println("Error in classOneAccessorTwoMethodOneError");
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		
 		System.out.println("Test: classOneAccessorTwoMethodTwo");
@@ -103,7 +103,7 @@ public class Main {
 			System.out.println("Error in classOneAccessorTwoMethodTwo");
 			e.printStackTrace();
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		System.out.println("Test: classOneAccessorTwoMethodTwoError112");
 		errorThrown = false;
@@ -120,7 +120,7 @@ public class Main {
 		else {
 			System.out.println("Error in classOneAccessorTwoMethodTwoError112");
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		System.out.println("Test: classOneAccessorTwoMethodTwoError304");
 		errorThrown = false;
@@ -137,7 +137,7 @@ public class Main {
 		else {
 			System.out.println("Error in classOneAccessorTwoMethodTwoError304");
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		
 		System.out.println("Test: classTwoAccessorOneMethodOne");
@@ -154,7 +154,7 @@ public class Main {
 			System.out.println("Error in classTwoAccessorOneMethodOne");
 			e.printStackTrace();
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		System.out.println("Test: classTwoAccessorOneMethodOneError");
 		errorThrown = false;
@@ -169,7 +169,7 @@ public class Main {
 		else {
 			System.out.println("Error in classTwoAccessorOneMethodOneError");
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		
 		System.out.println("Test: classTwoAccessorOneMethodTwo");
@@ -186,7 +186,7 @@ public class Main {
 			System.out.println("Error in classTwoAccessorOneMethodTwo");
 			e.printStackTrace();
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		System.out.println("Test: classTwoAccessorOneMethodTwoError");
 		errorThrown = false;
@@ -203,7 +203,7 @@ public class Main {
 		else {
 			System.out.println("Error in classTwoAccessorOneMethodTwoError");
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		
 		System.out.println("Test: Async");
@@ -218,7 +218,7 @@ public class Main {
 		} catch (SomeException112 e) {
 			System.out.println("Error in Async");
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		System.out.println("Test: Null");
 		
@@ -233,7 +233,7 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("-----------------------------------------------------------------------------------");
+		System.out.println("########################################");
 		
 		
 		serverA.shutdown();

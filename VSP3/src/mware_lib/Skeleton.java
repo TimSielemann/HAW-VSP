@@ -74,7 +74,7 @@ public class Skeleton {
 			return false;
 		}
 		for (int i = 0; i < params.length; ++i) {
-	        if (!paramTypes[i].isAssignableFrom(params[i].getClass()) && !(paramTypes[i].isPrimitive() && getWrapperFor(paramTypes[i]).isAssignableFrom(params[i].getClass()))) {
+	        if (!(params[i] == null && !paramTypes[i].isPrimitive()) && !paramTypes[i].isAssignableFrom(params[i].getClass()) && !(paramTypes[i].isPrimitive() && getWrapperFor(paramTypes[i]).isAssignableFrom(params[i].getClass()))) {
 	          return false;
 	        }
 	     }

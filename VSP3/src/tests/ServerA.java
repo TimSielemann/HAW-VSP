@@ -17,6 +17,8 @@ public class ServerA extends Thread {
 		ns.rebind(oneTwo, "OneAccessorTwo");
 		ClassTwoAccessorOneAsync async = new ClassTwoAccessorOneAsync();
 		ns.rebind(async, "Async");
+		ClassOneAccessorOneNull nullObject = new ClassOneAccessorOneNull();
+		ns.rebind(nullObject, "Null");
 		
 	}
 	
