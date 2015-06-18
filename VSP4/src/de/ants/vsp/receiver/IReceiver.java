@@ -7,4 +7,6 @@ public interface IReceiver {
 	public long getTime();
 	
 	public boolean isCollision();
+	
+	public int getSlotForCollusion();
 }

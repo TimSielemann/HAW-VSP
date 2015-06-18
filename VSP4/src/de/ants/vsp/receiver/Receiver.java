@@ -158,6 +158,7 @@ public class Receiver extends Thread implements IReceiver {
 			this.syncTime((char) message[0], bb.getLong());
 			this.reservedSpots[message[25]] = 1;
 			this.datensenke.dumpData(message, spotNo);
+			this.messages.clear();
 		}
 	}
 
@@ -190,6 +191,13 @@ public class Receiver extends Thread implements IReceiver {
 				this.inetadress = InetAddress.getLocalHost();
 			}
 		}
+	}
+
+
+	@Override
+	public int getSlotForCollusion() {
+		// TODO Auto-generated method stub
+		return -1;
 	}
 	
 	
