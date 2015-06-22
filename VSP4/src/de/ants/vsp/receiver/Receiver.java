@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.MulticastSocket;
 import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
@@ -28,16 +29,15 @@ public class Receiver extends Thread implements IReceiver {
 	private int port;
 	private String receiverAdress;
 	private long timeOffset;
-	private List<byte[]> messages;
+	private List<ReceiveWrapObject> messages;
 	private InetAddress inetadress;
 	private int[] reservedSpots;
-	private DatagramSocket socket;
+	private MulticastSocket socket;
 	private Datensenke datensenke;
 	private int nextSlot;
 	private int nextSlotLast;
 	private ISender sender;
 	private String name;
-	private boolean hasSend;
 	
 	public static void main(String[] args) throws NumberFormatException, SecurityException, IOException{
 		new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5])).start();
@@ -52,21 +52,21 @@ public class Receiver extends Thread implements IReceiver {
 		this.host = host;
 		this.port = port;
 		this.timeOffset = timeOffset;
-		this.messages = new ArrayList<byte[]>();
+		this.messages = new ArrayList<ReceiveWrapObject>();
 		if (nr < 10){
 			this.name = "team 07-0" + nr;
 		}
 		else {
 			this.name = "team 07-" + nr;
 		}
-		this.initSocket();
+		//this.initSocket();
+		this.inetadress = InetAddress.getByName(host);
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
 		this.datensenke = new Datensenke(this.name);
 		Sender sender = new Sender(host, port, this, this.datensenke, type);
 		sender.start();
 		this.sender = sender;
 		this.nextSlot = -1;
-		this.hasSend = false;
 		this.datensenke.logMessage("Receiver initialised");
 	}
 
@@ -122,10 +122,13 @@ public class Receiver extends Thread implements IReceiver {
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			socket = new DatagramSocket(this.port, this.inetadress);
+			
+			socket = new MulticastSocket(this.port);
+//			socket = new DatagramSocket(this.port, this.inetadress);
+			socket.joinGroup(this.inetadress);
 			this.listenOneFrame();
 		
-			while (true){
+			while (!this.isInterrupted()){
 				this.listenOneFrame();
 			}			
 			
@@ -144,12 +147,10 @@ public class Receiver extends Thread implements IReceiver {
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
 //		this.datensenke.logMessage("Frame End. Time: " + this.getTime());
-		if (!this.hasSend){
+		if (!this.sender.hasSend()){
 			this.nextSlot = this.getSlotForCollusion();
 		}
 		this.nextSlotLast = this.nextSlot;
-		
-		this.hasSend = false;
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
 	}
 
@@ -159,7 +160,7 @@ public class Receiver extends Thread implements IReceiver {
 		// Entwurf (neu)
 		if (spotNo == this.nextSlot){
 			this.nextSlot = 0;
-			sender.notifySender();
+			sender.notifySender(endTime);
 		}
 		try {
 			int timeout = (int) (endTime - this.getTime());
@@ -170,10 +171,11 @@ public class Receiver extends Thread implements IReceiver {
 			e.printStackTrace();
 		}
 		while (this.getTime() < endTime){
-			DatagramPacket packet = new DatagramPacket(new byte[34], 34);
+			byte[] buffer = new byte[34];
+			DatagramPacket packet = new DatagramPacket(buffer, 34);
 			try {
 				socket.receive(packet);
-				this.messages.add(packet.getData());
+				this.messages.add(new ReceiveWrapObject(packet.getData(), this.getTime()));
 				int timeout = (int) (endTime - this.getTime());
 				if (timeout > 0 ){
 					socket.setSoTimeout(timeout);				
@@ -193,11 +195,9 @@ public class Receiver extends Thread implements IReceiver {
 			this.datensenke.logCollision(spotNo == this.nextSlotLast, spotNo);
 		}
 		else if (this.messages.size() == 1) {
-			byte[] message = this.messages.get(0);
-			if (new String(Arrays.copyOfRange(message, 1, 11)).equals(this.name))
-				this.hasSend = true;
+			byte[] message = this.messages.get(0).getMsg();
 			ByteBuffer bb = ByteBuffer.wrap(Arrays.copyOfRange(message, 26, 34));
-			this.syncTime((char) message[0], bb.getLong());
+			this.syncTime((char) message[0], bb.getLong(), this.messages.get(0).getTimeReceived());
 			this.reservedSpots[message[25]] = 1;
 			this.datensenke.dumpData(message, spotNo);
 			this.messages.clear();
@@ -205,16 +205,16 @@ public class Receiver extends Thread implements IReceiver {
 	}
 
 
-	private void syncTime(char type, long timestamp) {
+	private void syncTime(char type, long timestamp, long received) {
 		//Bei B nichts tun.. siehe Zeitkonfiguration
 		if (type == 'A'){
 			if (this.type == 'B'){
-				long newOffset = timestamp - this.getTime();
+				long newOffset = timestamp - received;
 				datensenke.logNewTimeSet(this.timeOffset, newOffset);
 				this.timeOffset = newOffset;
 			}
 			else {
-				long newOffset = System.currentTimeMillis() - (timestamp + this.getTime())/2;
+				long newOffset = (timestamp - received)/2;
 				datensenke.logNewTimeSet(this.timeOffset, newOffset);
 				this.timeOffset = newOffset; 
 			}

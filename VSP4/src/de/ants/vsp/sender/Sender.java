@@ -7,6 +7,7 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 import de.ants.vsp.receiver.Datensenke;
 import de.ants.vsp.receiver.IReceiver;
@@ -17,12 +18,14 @@ public class Sender extends Thread implements ISender {
 	private int slot;
 	private int port;
 	private InetAddress ip;
-	private byte[] message = new byte[] {};
 	private SendBuffer sendBuffer;
 	private IReceiver empfaenger;
 	private Datensenke datensenke;
 	private char type;
-
+	private boolean hasSend;
+	private long endTime;
+	
+	
 	public Sender(String ip, int port, IReceiver rec, Datensenke datensenke,
 			char type) throws UnknownHostException {
 		this.slot = 0;
@@ -35,16 +38,6 @@ public class Sender extends Thread implements ISender {
 		this.type = type;
 	}
 
-	// public Sender(SendBuffer sendbuf, Receiver rec, Datensenke datasenke)
-	// throws UnknownHostException {
-	// this.slot = 0;
-	// this.ip = InetAddress.getByName("225.10.1.2");
-	// this.port = 15007;
-	// this.sendBuffer = sendbuf;
-	// this.datensenke = datasenke;
-	// this.empfaenger = rec;
-	// }
-
 	@Override
 	public boolean isRightSlot() {
 		if (this.slot < 1 || this.slot >= 25) {
@@ -56,10 +49,6 @@ public class Sender extends Thread implements ISender {
 
 	public boolean isCollusionFromReceiver() {
 		return this.empfaenger.isCollision();
-	}
-
-	public void getDataFromBuffer() {
-		this.message = this.sendBuffer.getData();
 	}
 
 	public long getTimeFromReceiver() {
@@ -78,28 +67,34 @@ public class Sender extends Thread implements ISender {
 
 	@Override
 	public void sendData() throws SocketException {
+		this.hasSend = false;
 		try {
 			Thread.sleep(Receiver.SPOTTIME / 4);
 		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
+			this.interrupt();
 			e1.printStackTrace();
 		}
-		if (isRightSlot()) {
-			if (!isCollusionFromReceiver()) {
-				// if (rightTimeToSend()) {
+		if (!isCollusionFromReceiver()) {
+				//
+			if (rightTimeToSend()) {
 				try {
 					byte[] toSend = this.prepareMessage();
-
 					DatagramSocket socket = new DatagramSocket();
-					socket.send(new DatagramPacket(toSend, this.message.length,
+					socket.send(new DatagramPacket(toSend, toSend.length,
 							this.ip, port));
+					this.hasSend = true;
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				// }
+				// 
 			}
 		}
+	}
+	
+	private boolean rightTimeToSend() {
+		long time = this.getTimeFromReceiver();		
+		return time < this.endTime;
 	}
 
 	public byte[] prepareMessage() {
@@ -120,20 +115,16 @@ public class Sender extends Thread implements ISender {
 		return toSend;
 	}
 
-	@Override
-	public synchronized void notifySender() {
-		this.notify();
-	}
 
 	@Override
 	public synchronized void run() {
 		// TODO Auto-generated method stub
 		super.run();
-		while (true) {
+		while (!this.isInterrupted()) {
 			try {
 				this.wait();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				this.interrupt();
 				e.printStackTrace();
 			}
 			try {
@@ -143,6 +134,17 @@ public class Sender extends Thread implements ISender {
 				e.printStackTrace();
 			}
 		}
+	}
+
+	@Override
+	public boolean hasSend() {
+		return this.hasSend;
+	}
+
+	@Override
+	public synchronized void notifySender(long endTime) {
+		this.endTime = endTime;
+		this.notify();		
 	}
 
 	// private boolean rightTimeToSend() {

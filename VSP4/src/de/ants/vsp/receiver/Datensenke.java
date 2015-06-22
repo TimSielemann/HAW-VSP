@@ -27,20 +27,23 @@ public class Datensenke {
 	}
 
 	private String getMessageForBytes(byte[] bytes) {
-		ByteBuffer bb = ByteBuffer.wrap(Arrays.copyOfRange(bytes, 26, 33));
 		StringBuilder builder = new StringBuilder();
-		builder.append("Stationstyp: ");
-		builder.append(bytes[0]);
-		builder.append("\\n");
-		builder.append("Message: ");
-		builder.append(Arrays.copyOfRange(bytes, 1, 24));
-		builder.append("\\n");
-		builder.append("Next Reserved Slot: ");
-		builder.append(bytes[25]);
-		builder.append("\\n");
-		builder.append("Timestamp: ");
-		builder.append(bb.getLong());
-		builder.append("\\n");
+		if (bytes.length == 34){
+			ByteBuffer bb = ByteBuffer.wrap(Arrays.copyOfRange(bytes, 26, 34));
+			builder.append(System.getProperty("line.separator"));
+			builder.append("Stationstyp: ");
+			builder.append(new String(Arrays.copyOfRange(bytes, 0, 1)));
+			builder.append(System.getProperty("line.separator"));
+			builder.append("Message: ");
+			builder.append(new String(Arrays.copyOfRange(bytes, 1, 24)));
+			builder.append(System.getProperty("line.separator"));
+			builder.append("Next Reserved Slot: ");
+			builder.append(bytes[25] + "");
+			builder.append(System.getProperty("line.separator"));
+			builder.append("Timestamp: ");
+			builder.append(bb.getLong() + "");
+			builder.append(System.getProperty("line.separator"));			
+		}
 		return builder.toString();
 	}
 	
