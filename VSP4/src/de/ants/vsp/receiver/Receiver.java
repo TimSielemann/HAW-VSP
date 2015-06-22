@@ -14,10 +14,13 @@ import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.List;
 
+import de.ants.vsp.sender.ISender;
+import de.ants.vsp.sender.Sender;
+
 public class Receiver extends Thread implements IReceiver {
 	
-	private static final long SPOTTIME = 40;
-	private static final long FRAMETIME = 1000; 
+	public static final long SPOTTIME = 40;
+	public static final long FRAMETIME = 1000; 
 
 	private char type;
 	private String ifname;
@@ -56,10 +59,12 @@ public class Receiver extends Thread implements IReceiver {
 		else {
 			this.name = "team 07-" + nr;
 		}
-		//TODO Sender initialisieren
 		this.initSocket();
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
 		this.datensenke = new Datensenke(this.name);
+		Sender sender = new Sender(host, port, this, this.datensenke, type);
+		sender.start();
+		this.sender = sender;
 		this.nextSlot = -1;
 		this.hasSend = false;
 		this.datensenke.logMessage("Receiver initialised");
@@ -119,7 +124,7 @@ public class Receiver extends Thread implements IReceiver {
 			}
 			socket = new DatagramSocket(this.port, this.inetadress);
 			this.listenOneFrame();
-			
+		
 			while (true){
 				this.listenOneFrame();
 			}			
