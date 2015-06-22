@@ -32,10 +32,17 @@ public class Receiver extends Thread implements IReceiver {
 	private Datensenke datensenke;
 	private int nextSlot;
 	private int nextSlotLast;
+	private ISender sender;
+	private String name;
+	private boolean hasSend;
+	
+	public static void main(String[] args) throws NumberFormatException, SecurityException, IOException{
+		new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5])).start();
+	}
 	
 	
 	public Receiver(char type, String ifname, String host, int port,
-			long timeOffset) throws SocketException, UnknownHostException {
+			long timeOffset, int nr) throws SecurityException, IOException {
 		super();
 		this.type = type;
 		this.ifname = ifname;
@@ -43,9 +50,19 @@ public class Receiver extends Thread implements IReceiver {
 		this.port = port;
 		this.timeOffset = timeOffset;
 		this.messages = new ArrayList<byte[]>();
+		if (nr < 10){
+			this.name = "team 07-0" + nr;
+		}
+		else {
+			this.name = "team 07-" + nr;
+		}
+		//TODO Sender initialisieren
 		this.initSocket();
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
-		this.datensenke = new Datensenke();
+		this.datensenke = new Datensenke(this.name);
+		this.nextSlot = -1;
+		this.hasSend = false;
+		this.datensenke.logMessage("Receiver initialised");
 	}
 
 
@@ -93,7 +110,8 @@ public class Receiver extends Thread implements IReceiver {
 	public void run() {
 		super.run();
 		try {	
-			//Warten bis tatsächlich ein Frame beginnt...
+			//Warten bis tatsï¿½chlich ein Frame beginnt...
+			// (Entwurf)
 			try {
 				Thread.sleep(1000 - (this.getTime() % 1000));
 			} catch (InterruptedException e) {
@@ -101,9 +119,6 @@ public class Receiver extends Thread implements IReceiver {
 			}
 			socket = new DatagramSocket(this.port, this.inetadress);
 			this.listenOneFrame();
-			
-			//TODO Sender starten...
-			
 			
 			while (true){
 				this.listenOneFrame();
@@ -118,17 +133,34 @@ public class Receiver extends Thread implements IReceiver {
 	}
 	
 	private void listenOneFrame() throws IOException {
+//		this.datensenke.logMessage("Listen to Frame. Time: " + this.getTime());
 		for(int i=0 ; i<(int) (FRAMETIME/SPOTTIME); i++){
-			listenOneSpot((this.getTime()%1000) + i*SPOTTIME , (this.getTime()%1000) + (i+1)*SPOTTIME, i+1);
+			long time = this.getTime();
+			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
+		}
+//		this.datensenke.logMessage("Frame End. Time: " + this.getTime());
+		if (!this.hasSend){
+			this.nextSlot = this.getSlotForCollusion();
 		}
 		this.nextSlotLast = this.nextSlot;
-		this.nextSlot = 0;
+		
+		this.hasSend = false;
+		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
 	}
 
 
 	private void listenOneSpot(long startTime, long endTime, int spotNo) throws IOException {
+		//Wenn wir uns im Sender Spot befinden, muss der Sender benachrichtigt werden, dass er jetzt senden darf
+		// Entwurf (neu)
+		if (spotNo == this.nextSlot){
+			this.nextSlot = 0;
+			sender.notifySender();
+		}
 		try {
-			socket.setSoTimeout((int) (endTime - startTime));
+			int timeout = (int) (endTime - this.getTime());
+			if (timeout > 0 ){
+				socket.setSoTimeout(timeout);				
+			}
 		} catch (SocketException e) {
 			e.printStackTrace();
 		}
@@ -137,7 +169,10 @@ public class Receiver extends Thread implements IReceiver {
 			try {
 				socket.receive(packet);
 				this.messages.add(packet.getData());
-				socket.setSoTimeout((int) (endTime - this.getTime()));
+				int timeout = (int) (endTime - this.getTime());
+				if (timeout > 0 ){
+					socket.setSoTimeout(timeout);				
+				}
 			}	catch (SocketTimeoutException e){
 				//Nothing TODO.				
 			}
@@ -154,7 +189,9 @@ public class Receiver extends Thread implements IReceiver {
 		}
 		else if (this.messages.size() == 1) {
 			byte[] message = this.messages.get(0);
-			ByteBuffer bb = ByteBuffer.wrap(Arrays.copyOfRange(message, 26, 33));
+			if (new String(Arrays.copyOfRange(message, 1, 11)).equals(this.name))
+				this.hasSend = true;
+			ByteBuffer bb = ByteBuffer.wrap(Arrays.copyOfRange(message, 26, 34));
 			this.syncTime((char) message[0], bb.getLong());
 			this.reservedSpots[message[25]] = 1;
 			this.datensenke.dumpData(message, spotNo);
@@ -196,8 +233,19 @@ public class Receiver extends Thread implements IReceiver {
 
 	@Override
 	public int getSlotForCollusion() {
-		// TODO Auto-generated method stub
-		return -1;
+		List<Integer> freeslots = new ArrayList<Integer>();
+		for (int i = 0; i < this.reservedSpots.length; i++){
+			if (this.reservedSpots[i] == 0){
+				freeslots.add(i+1);
+			}
+		}
+		if (freeslots.size() > 0){
+			int index = (int)(Math.random() * freeslots.size());
+			return freeslots.get(index);		
+		}
+		else {
+			return 0;
+		}
 	}
 	
 	
