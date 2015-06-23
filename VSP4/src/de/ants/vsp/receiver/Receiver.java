@@ -45,7 +45,7 @@ public class Receiver extends Thread implements IReceiver {
 		Receiver receiver = new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5]));
 		receiver.start();
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(30000);
 		} catch (InterruptedException e) {
 		}
 		receiver.interrupt();
@@ -167,7 +167,7 @@ public class Receiver extends Thread implements IReceiver {
 		this.nextSlotLast = this.nextSlot;
 		//this.datensenke.logMessage("Receiver: " + this.name + " reservedSlots: " + Arrays.toString(this.reservedSpots));
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
-		//this.datensenke.logMessage("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
+		this.datensenke.logMessage("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
 		this.datensenke.logMessage("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
 		this.hasSend = false;
 	}
