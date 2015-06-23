@@ -10,11 +10,11 @@ import java.util.logging.SimpleFormatter;
 
 public class Datensenke {
 	private Logger logger;
+	private FileHandler fh;
 	
 	public Datensenke(String name) throws SecurityException, IOException{
 		logger = Logger.getLogger("VSP");
 		logger.setLevel(Level.ALL);
-		FileHandler fh;  
 		// This block configure the logger with handler and formatter  
         fh = new FileHandler("./" +  name +  ".log");  
 		logger.addHandler(fh);
@@ -23,7 +23,8 @@ public class Datensenke {
 	}
 	
 	public void dumpData(byte[] bytes, int spotNo){
-		logger.info("Spot: " + spotNo + " Message Erhalten: " + this.getMessageForBytes(bytes));
+		//logger.info("Spot: " + spotNo + " Message Erhalten: " + this.getMessageForBytes(bytes));
+		System.out.println("Spot: " + spotNo + " Message Erhalten: " + this.getMessageForBytes(bytes));
 	}
 
 	private String getMessageForBytes(byte[] bytes) {
@@ -62,6 +63,11 @@ public class Datensenke {
 	}
 	
 	public void logMessage(String message){
-		logger.info(message);
+		//logger.info(message);
+		System.out.println(message);
+	}
+	
+	public void close(){
+		this.fh.close();
 	}
 }

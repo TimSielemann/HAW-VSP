@@ -27,7 +27,6 @@ public class Receiver extends Thread implements IReceiver {
 	private String ifname;
 	private String host;
 	private int port;
-	private String receiverAdress;
 	private long timeOffset;
 	private List<ReceiveWrapObject> messages;
 	private InetAddress inetadress;
@@ -36,11 +35,20 @@ public class Receiver extends Thread implements IReceiver {
 	private Datensenke datensenke;
 	private int nextSlot;
 	private int nextSlotLast;
-	private ISender sender;
+	private Sender sender;
 	private String name;
+	private int sendFrames;
+	private int notSendFrames;
+	private boolean hasSend;
 	
 	public static void main(String[] args) throws NumberFormatException, SecurityException, IOException{
-		new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5])).start();
+		Receiver receiver = new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5]));
+		receiver.start();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+		}
+		receiver.interrupt();
 	}
 	
 	
@@ -101,15 +109,15 @@ public class Receiver extends Thread implements IReceiver {
 	public boolean isCollision() {		
 		return messages.size() >= 1;
 	}
-	
-	private InetAddress getIPAdress(NetworkInterface networkInterface){
-		Enumeration<InetAddress> enumeration = networkInterface.getInetAddresses();
-		while (enumeration.hasMoreElements()){
-			InetAddress adr = enumeration.nextElement();
-			return adr;
-		}
-		return null;
-	}
+//	
+//	private InetAddress getIPAdress(NetworkInterface networkInterface){
+//		Enumeration<InetAddress> enumeration = networkInterface.getInetAddresses();
+//		while (enumeration.hasMoreElements()){
+//			InetAddress adr = enumeration.nextElement();
+//			return adr;
+//		}
+//		return null;
+//	}
 
 	@Override
 	public void run() {
@@ -120,10 +128,10 @@ public class Receiver extends Thread implements IReceiver {
 			try {
 				Thread.sleep(1000 - (this.getTime() % 1000));
 			} catch (InterruptedException e) {
-				e.printStackTrace();
 			}
 			
 			socket = new MulticastSocket(this.port);
+			//socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
 //			socket = new DatagramSocket(this.port, this.inetadress);
 			socket.joinGroup(this.inetadress);
 			this.listenOneFrame();
@@ -131,7 +139,9 @@ public class Receiver extends Thread implements IReceiver {
 			while (!this.isInterrupted()){
 				this.listenOneFrame();
 			}			
-			
+			this.sender.interrupt();
+			socket.close();
+			this.datensenke.close();
 		} catch (SocketException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -147,11 +157,19 @@ public class Receiver extends Thread implements IReceiver {
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
 //		this.datensenke.logMessage("Frame End. Time: " + this.getTime());
-		if (!this.sender.hasSend()){
+		if (!this.hasSend){
 			this.nextSlot = this.getSlotForCollusion();
+			this.notSendFrames +=1;
+		}
+		else {
+			this.sendFrames +=1;
 		}
 		this.nextSlotLast = this.nextSlot;
+		//this.datensenke.logMessage("Receiver: " + this.name + " reservedSlots: " + Arrays.toString(this.reservedSpots));
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
+		//this.datensenke.logMessage("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
+		this.datensenke.logMessage("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
+		this.hasSend = false;
 	}
 
 
@@ -195,10 +213,14 @@ public class Receiver extends Thread implements IReceiver {
 			this.datensenke.logCollision(spotNo == this.nextSlotLast, spotNo);
 		}
 		else if (this.messages.size() == 1) {
+			if (this.nextSlotLast == spotNo && this.sender.hasSend()){
+				this.hasSend = true;
+			}
 			byte[] message = this.messages.get(0).getMsg();
 			ByteBuffer bb = ByteBuffer.wrap(Arrays.copyOfRange(message, 26, 34));
 			this.syncTime((char) message[0], bb.getLong(), this.messages.get(0).getTimeReceived());
-			this.reservedSpots[message[25]] = 1;
+			//-1 weil Spotnummern bei 1 anfangen
+			this.reservedSpots[message[25]-1] = 1;
 			this.datensenke.dumpData(message, spotNo);
 			this.messages.clear();
 		}
@@ -221,19 +243,19 @@ public class Receiver extends Thread implements IReceiver {
 		}
 	}
 
-
-	public void initSocket() throws SocketException, UnknownHostException{
-		NetworkInterface networkInterface = NetworkInterface.getByName(this.ifname);
-		if (networkInterface == null){
-			this.inetadress = InetAddress.getLocalHost();
-		
-		}else {
-			this.inetadress = this.getIPAdress(networkInterface);
-			if (this.inetadress == null){
-				this.inetadress = InetAddress.getLocalHost();
-			}
-		}
-	}
+//
+//	public void initSocket() throws SocketException, UnknownHostException{
+//		NetworkInterface networkInterface = NetworkInterface.getByName(this.ifname);
+//		if (networkInterface == null){
+//			this.inetadress = InetAddress.getLocalHost();
+//		
+//		}else {
+//			this.inetadress = this.getIPAdress(networkInterface);
+//			if (this.inetadress == null){
+//				this.inetadress = InetAddress.getLocalHost();
+//			}
+//		}
+//	}
 
 
 	@Override

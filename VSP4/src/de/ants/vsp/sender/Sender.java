@@ -72,7 +72,6 @@ public class Sender extends Thread implements ISender {
 			Thread.sleep(Receiver.SPOTTIME / 4);
 		} catch (InterruptedException e1) {
 			this.interrupt();
-			e1.printStackTrace();
 		}
 		if (!isCollusionFromReceiver()) {
 				//
@@ -82,6 +81,7 @@ public class Sender extends Thread implements ISender {
 					DatagramSocket socket = new DatagramSocket();
 					socket.send(new DatagramPacket(toSend, toSend.length,
 							this.ip, port));
+					socket.close();
 					this.hasSend = true;
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
@@ -123,17 +123,17 @@ public class Sender extends Thread implements ISender {
 		while (!this.isInterrupted()) {
 			try {
 				this.wait();
+				try {
+					this.sendData();
+				} catch (SocketException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			} catch (InterruptedException e) {
 				this.interrupt();
-				e.printStackTrace();
-			}
-			try {
-				this.sendData();
-			} catch (SocketException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
 			}
 		}
+		this.sendBuffer.interrupt();
 	}
 
 	@Override
@@ -146,14 +146,5 @@ public class Sender extends Thread implements ISender {
 		this.endTime = endTime;
 		this.notify();		
 	}
-
-	// private boolean rightTimeToSend() {
-	// boolean flag=false;
-	// long warteDauerSlot=this.slot*40l;
-	// long time=this.getTimeFromReceiver();
-	// if(time>time+warteDauerSlot)
-	// return flag;
-	//
-	// }
 
 }
