@@ -17,22 +17,18 @@ public class SendBuffer extends Thread implements ISendBuffer {
 
 	public byte[] getDataFromSource() {
 		byte[] retAry = new byte[24];
-		boolean flag = true;
-//		while (flag) {
 		int i = 0;
-			try {
-				while (i <= 23){
-					//i = System.in.read(retAry);
-					i+=	System.in.read(retAry, i, 24-i);					
-				}
-				
-			} catch (IOException e) {
-				// System.out.println("Keine, alte oder falsche Daten eingetroffen");
-				e.printStackTrace();
+		try {
+			while (i <= 23) {
+				// i = System.in.read(retAry);
+				i += System.in.read(retAry, i, 24 - i);
 			}
-//		}
-		return retAry;			
 
+		} catch (IOException e) {
+			// System.out.println("Keine, alte oder falsche Daten eingetroffen");
+			e.printStackTrace();
+		}
+		return retAry;
 
 	}
 
@@ -47,8 +43,8 @@ public class SendBuffer extends Thread implements ISendBuffer {
 	@Override
 	public void run() {
 		super.run();
-		while (!this.isInterrupted()) {		
-			this.setToSend( getDataFromSource());			
+		while (!this.isInterrupted()) {
+			this.setToSend(getDataFromSource());
 		}
 	}
 }

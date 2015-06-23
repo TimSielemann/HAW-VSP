@@ -201,6 +201,7 @@ public class Receiver extends Thread implements IReceiver {
 			this.datensenke.logCollision(spotNo == this.nextSlotLast, spotNo);
 		}
 		else if (this.messages.size() == 1) {
+			// Der sender darf nur einmal pro Frame Senden
 			if (this.nextSlotLast == spotNo && this.sender.hasSend()){
 				this.hasSend = true;
 			}

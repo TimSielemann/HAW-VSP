@@ -74,9 +74,11 @@ public class Sender extends Thread implements ISender {
 			this.interrupt();
 		}
 		if (!isCollusionFromReceiver()) {
+			//siehe Sender - Ablauf
 			if (rightTimeToSend()) {
 				try {
 					byte[] toSend = this.prepareMessage();
+					//Kommunikation UDP
 					DatagramSocket socket = new DatagramSocket();
 					socket.send(new DatagramPacket(toSend, toSend.length,
 							this.ip, port));
@@ -101,6 +103,7 @@ public class Sender extends Thread implements ISender {
 	}
 
 	public byte[] prepareMessage() {
+		// laut Nachrichtenformat
 		byte[] toSend = new byte[34];
 		byte[] message = this.sendBuffer.getData();
 		int nextSlot = this.getSlotforNextFrameFromReceiver();
@@ -125,6 +128,7 @@ public class Sender extends Thread implements ISender {
 		super.run();
 		while (!this.isInterrupted()) {
 			try {
+				// Änderung im Entwurf Pkt. 1
 				this.wait();
 				try {
 					this.sendData();
