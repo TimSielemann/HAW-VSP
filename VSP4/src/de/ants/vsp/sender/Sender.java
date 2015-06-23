@@ -69,7 +69,7 @@ public class Sender extends Thread implements ISender {
 	public void sendData() throws SocketException {
 		this.hasSend = false;
 		try {
-			Thread.sleep(Receiver.SPOTTIME / 2);
+			Thread.sleep(Receiver.SPOTTIME / 3);
 		} catch (InterruptedException e1) {
 			this.interrupt();
 		}
@@ -92,7 +92,7 @@ public class Sender extends Thread implements ISender {
 				this.datensenke.logMessage("It's to late for sending the Message aborded...");
 		}
 		else
-			this.datensenke.logMessage("Sending Message would has coused a Collusion aborded...");
+			this.datensenke.logMessage("Sending Message would have coused a Collusion aborded...");
 	}
 	
 	private boolean rightTimeToSend() {

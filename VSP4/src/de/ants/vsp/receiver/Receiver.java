@@ -109,15 +109,6 @@ public class Receiver extends Thread implements IReceiver {
 	public boolean isCollision() {		
 		return messages.size() >= 1;
 	}
-//	
-//	private InetAddress getIPAdress(NetworkInterface networkInterface){
-//		Enumeration<InetAddress> enumeration = networkInterface.getInetAddresses();
-//		while (enumeration.hasMoreElements()){
-//			InetAddress adr = enumeration.nextElement();
-//			return adr;
-//		}
-//		return null;
-//	}
 
 	@Override
 	public void run() {
@@ -132,7 +123,6 @@ public class Receiver extends Thread implements IReceiver {
 			
 			socket = new MulticastSocket(this.port);
 			//socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
-//			socket = new DatagramSocket(this.port, this.inetadress);
 			socket.joinGroup(this.inetadress);
 			this.listenOneFrame();
 		
@@ -151,12 +141,10 @@ public class Receiver extends Thread implements IReceiver {
 	}
 	
 	private void listenOneFrame() throws IOException {
-//		this.datensenke.logMessage("Listen to Frame. Time: " + this.getTime());
 		for(int i=0 ; i<(int) (FRAMETIME/SPOTTIME); i++){
 			long time = this.getTime();
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
-//		this.datensenke.logMessage("Frame End. Time: " + this.getTime());
 		if (!this.hasSend){
 			this.nextSlot = this.getSlotForCollusion();
 			this.notSendFrames +=1;
@@ -167,7 +155,7 @@ public class Receiver extends Thread implements IReceiver {
 		this.nextSlotLast = this.nextSlot;
 		//this.datensenke.logMessage("Receiver: " + this.name + " reservedSlots: " + Arrays.toString(this.reservedSpots));
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
-		this.datensenke.logMessage("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
+//		this.datensenke.logMessage("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
 		this.datensenke.logMessage("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
 		this.hasSend = false;
 	}
@@ -242,21 +230,6 @@ public class Receiver extends Thread implements IReceiver {
 			}
 		}
 	}
-
-//
-//	public void initSocket() throws SocketException, UnknownHostException{
-//		NetworkInterface networkInterface = NetworkInterface.getByName(this.ifname);
-//		if (networkInterface == null){
-//			this.inetadress = InetAddress.getLocalHost();
-//		
-//		}else {
-//			this.inetadress = this.getIPAdress(networkInterface);
-//			if (this.inetadress == null){
-//				this.inetadress = InetAddress.getLocalHost();
-//			}
-//		}
-//	}
-
 
 	@Override
 	public int getSlotForCollusion() {
