@@ -87,11 +87,11 @@ public class Sender extends Thread implements ISender {
 			try {
 
 			if (rightTimeToSend()) {
+					this.hasSend = true;
 					byte[] toSend = this.prepareMessage();
 					//Kommunikation UDP
 					socket.send(new DatagramPacket(toSend, toSend.length,
 							this.ip, port));
-					this.hasSend = true;
 				// 
 			}
 			else 
