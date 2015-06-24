@@ -160,10 +160,10 @@ public class Receiver extends Thread implements IReceiver {
 			
 			datensenke.logNewTimeSet(this.timeOffset, newOffset);
 			if (this.type == 'B'){
-				this.timeOffset = newOffset;
+				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
 			}
 			else {
-				this.timeOffset = (this.timeOffset + newOffset)/2;
+				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
 			}
 		}
 		this.timecount = 0;
