@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.InetAddress;
+import java.net.MulticastSocket;
+import java.net.NetworkInterface;
 import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
@@ -24,10 +26,11 @@ public class Sender extends Thread implements ISender {
 	private char type;
 	private boolean hasSend;
 	private long endTime;
+	private String ifname;
 	
 	
 	public Sender(String ip, int port, IReceiver rec, Datensenke datensenke,
-			char type) throws UnknownHostException {
+			char type, String ifname) throws UnknownHostException {
 		this.slot = 0;
 		this.ip = InetAddress.getByName(ip);
 		this.port = port;
@@ -36,6 +39,7 @@ public class Sender extends Thread implements ISender {
 		this.datensenke = datensenke;
 		sendBuffer.start();
 		this.type = type;
+		this.ifname = ifname;
 	}
 
 	@Override
@@ -79,7 +83,9 @@ public class Sender extends Thread implements ISender {
 				try {
 					byte[] toSend = this.prepareMessage();
 					//Kommunikation UDP
-					DatagramSocket socket = new DatagramSocket();
+					MulticastSocket socket = new MulticastSocket();
+					socket.setTimeToLive(1);
+					socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
 					socket.send(new DatagramPacket(toSend, toSend.length,
 							this.ip, port));
 					socket.close();
@@ -128,7 +134,7 @@ public class Sender extends Thread implements ISender {
 		super.run();
 		while (!this.isInterrupted()) {
 			try {
-				// Änderung im Entwurf Pkt. 1
+				// ï¿½nderung im Entwurf Pkt. 1
 				this.wait();
 				try {
 					this.sendData();

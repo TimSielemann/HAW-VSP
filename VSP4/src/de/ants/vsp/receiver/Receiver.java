@@ -71,7 +71,7 @@ public class Receiver extends Thread implements IReceiver {
 		this.inetadress = InetAddress.getByName(host);
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
 		this.datensenke = new Datensenke(this.name);
-		Sender sender = new Sender(host, port, this, this.datensenke, type);
+		Sender sender = new Sender(host, port, this, this.datensenke, type, ifname);
 		sender.start();
 		this.sender = sender;
 		this.nextSlot = -1;
@@ -122,7 +122,7 @@ public class Receiver extends Thread implements IReceiver {
 			}
 			
 			socket = new MulticastSocket(this.port);
-			//socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
+			socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
 			socket.joinGroup(this.inetadress);
 			this.listenOneFrame();
 		
