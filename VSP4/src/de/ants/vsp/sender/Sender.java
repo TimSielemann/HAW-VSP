@@ -73,31 +73,31 @@ public class Sender extends Thread implements ISender {
 	public void sendData() throws SocketException {
 		this.hasSend = false;
 		try {
-			Thread.sleep(Receiver.SPOTTIME / 3);
+			Thread.sleep(Receiver.SPOTTIME / 2);
 		} catch (InterruptedException e1) {
 			this.interrupt();
 		}
 		if (!isCollusionFromReceiver()) {
 			//siehe Sender - Ablauf
+			try {
+			MulticastSocket socket = new MulticastSocket();
+			socket.setTimeToLive(1);
+			socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
 			if (rightTimeToSend()) {
-				try {
 					byte[] toSend = this.prepareMessage();
 					//Kommunikation UDP
-					MulticastSocket socket = new MulticastSocket();
-					socket.setTimeToLive(1);
-					socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
 					socket.send(new DatagramPacket(toSend, toSend.length,
 							this.ip, port));
-					socket.close();
 					this.hasSend = true;
-				} catch (IOException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
 				// 
 			}
 			else 
 				this.datensenke.logMessage("It's to late for sending the Message aborded...");
+			socket.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		else
 			this.datensenke.logMessage("Sending Message would have coused a Collusion aborded...");

@@ -44,11 +44,11 @@ public class Receiver extends Thread implements IReceiver {
 	public static void main(String[] args) throws NumberFormatException, SecurityException, IOException{
 		Receiver receiver = new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5]));
 		receiver.start();
-		try {
-			Thread.sleep(30000);
-		} catch (InterruptedException e) {
-		}
-		receiver.interrupt();
+//		try {
+//			Thread.sleep(300000);
+//		} catch (InterruptedException e) {
+//		}
+//		receiver.interrupt();
 	}
 	
 	
