@@ -156,12 +156,18 @@ public class Receiver extends Thread implements IReceiver {
 		this.datensenke.logMessage("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
 		this.hasSend = false;
 		if (timecount > 0){
-			int newOffset = this.sumOffset / this.timecount;
-			this.timecount = 0;
-			this.sumOffset = 0;
+			int newOffset = (this.sumOffset / this.timecount);
+			
 			datensenke.logNewTimeSet(this.timeOffset, newOffset);
-			this.timeOffset = newOffset;
+			if (this.type == 'B'){
+				this.timeOffset = newOffset;
+			}
+			else {
+				this.timeOffset = (this.timeOffset + newOffset)/2;
+			}
 		}
+		this.timecount = 0;
+		this.sumOffset = 0;
 	}
 
 
