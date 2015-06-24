@@ -27,10 +27,11 @@ public class Sender extends Thread implements ISender {
 	private boolean hasSend;
 	private long endTime;
 	private String ifname;
+	private MulticastSocket socket;
 	
 	
 	public Sender(String ip, int port, IReceiver rec, Datensenke datensenke,
-			char type, String ifname) throws UnknownHostException {
+			char type, String ifname) throws IOException {
 		this.slot = 0;
 		this.ip = InetAddress.getByName(ip);
 		this.port = port;
@@ -40,6 +41,10 @@ public class Sender extends Thread implements ISender {
 		sendBuffer.start();
 		this.type = type;
 		this.ifname = ifname;
+		socket = new MulticastSocket(this.port);
+		socket.setTimeToLive(1);
+		socket.joinGroup(this.ip);
+		socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
 	}
 
 	@Override
@@ -80,9 +85,7 @@ public class Sender extends Thread implements ISender {
 		if (!isCollusionFromReceiver()) {
 			//siehe Sender - Ablauf
 			try {
-			MulticastSocket socket = new MulticastSocket();
-			socket.setTimeToLive(1);
-			socket.setNetworkInterface(NetworkInterface.getByName(this.ifname));
+
 			if (rightTimeToSend()) {
 					byte[] toSend = this.prepareMessage();
 					//Kommunikation UDP
@@ -93,7 +96,7 @@ public class Sender extends Thread implements ISender {
 			}
 			else 
 				this.datensenke.logMessage("It's to late for sending the Message aborded...");
-			socket.close();
+			
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -114,7 +117,7 @@ public class Sender extends Thread implements ISender {
 		byte[] message = this.sendBuffer.getData();
 		int nextSlot = this.getSlotforNextFrameFromReceiver();
 		Long time = this.getTimeFromReceiver();
-		ByteBuffer bb = ByteBuffer.allocate(Long.BYTES);
+		ByteBuffer bb = ByteBuffer.allocate(8);
 		byte[] timeBytes = bb.putLong(time).array();
 		toSend[0] = (byte) this.type;
 		for (int i = 0; i < message.length; i++) {
@@ -146,6 +149,7 @@ public class Sender extends Thread implements ISender {
 				this.interrupt();
 			}
 		}
+		socket.close();
 		this.sendBuffer.interrupt();
 	}
 

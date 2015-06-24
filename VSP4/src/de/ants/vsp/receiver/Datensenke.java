@@ -15,7 +15,7 @@ public class Datensenke {
 	
 	public Datensenke(String name) throws SecurityException, IOException{
 		logger = Logger.getLogger("VSP");
-		logger.setLevel(Level.INFO);
+		logger.setLevel(Level.SEVERE);
 		// This block configure the logger with handler and formatter  
 //        fh = new FileHandler("./" +  name +  ".log");  
 //		logger.addHandler(fh);
@@ -61,11 +61,15 @@ public class Datensenke {
 	
 	public void logNewTimeSet(long oldTime, long newTime){
 		if (oldTime != newTime)
-			logger.info(this.name + "Time changed: " + oldTime + " -> " + newTime);
+			logger.severe(this.name + "Time changed: " + oldTime + " -> " + newTime);
 	}
 	
 	public void logMessage(String message){
 		logger.info(this.name + message);
+	}
+	
+	public void logMessageSevere(String message){
+		logger.severe(this.name + message);
 	}
 	
 	public void close(){

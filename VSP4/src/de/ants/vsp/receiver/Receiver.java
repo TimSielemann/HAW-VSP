@@ -40,6 +40,8 @@ public class Receiver extends Thread implements IReceiver {
 	private int sendFrames;
 	private int notSendFrames;
 	private boolean hasSend;
+	private int timecount = 0;
+	private int sumOffset = 0;
 	
 	public static void main(String[] args) throws NumberFormatException, SecurityException, IOException{
 		Receiver receiver = new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5]));
@@ -158,6 +160,13 @@ public class Receiver extends Thread implements IReceiver {
 //		this.datensenke.logMessage("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
 		this.datensenke.logMessage("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
 		this.hasSend = false;
+		if (timecount > 0){
+			int newOffset = this.sumOffset / this.timecount;
+			this.timecount = 0;
+			this.sumOffset = 0;
+			datensenke.logNewTimeSet(this.timeOffset, newOffset);
+			this.timeOffset = newOffset;
+		}
 	}
 
 
@@ -214,21 +223,25 @@ public class Receiver extends Thread implements IReceiver {
 			this.messages.clear();
 		}
 	}
-
+	
+	
 
 	private void syncTime(char type, long timestamp, long received) {
 		//Bei B nichts tun.. siehe Zeitkonfiguration
 		if (type == 'A'){
-			if (this.type == 'B'){
-				long newOffset = timestamp - received;
-				datensenke.logNewTimeSet(this.timeOffset, newOffset);
-				this.timeOffset = newOffset;
-			}
-			else {
-				long newOffset = (timestamp - received)/2;
-				datensenke.logNewTimeSet(this.timeOffset, newOffset);
-				this.timeOffset = newOffset; 
-			}
+			this.timecount++;
+			long newOffset = (timestamp - received);
+			this.sumOffset += newOffset;
+//			datensenke.logNewTimeSet(this.timeOffset, newOffset);
+//			this.timeOffset = newOffset;
+			
+//			if (this.type == 'B'){
+//			}
+//			else {
+//				long newOffset = (timestamp - received)/2;
+//				datensenke.logNewTimeSet(this.timeOffset, newOffset);
+//				this.timeOffset = newOffset; 
+//			}
 		}
 	}
 
