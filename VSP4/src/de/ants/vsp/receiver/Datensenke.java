@@ -17,11 +17,11 @@ public class Datensenke {
 		logger = Logger.getLogger("VSP");
 		logger.setLevel(Level.SEVERE);
 		logger.setUseParentHandlers(false);
-////		 This block configure the logger with handler and formatter  
-//        fh = new FileHandler("./" +  name +  ".log");  
-//		logger.addHandler(fh);
-//		SimpleFormatter formatter = new SimpleFormatter();  
-//		fh.setFormatter(formatter); 
+//		 This block configure the logger with handler and formatter  
+        fh = new FileHandler("./" +  name +  ".log");  
+		logger.addHandler(fh);
+		SimpleFormatter formatter = new SimpleFormatter();  
+		fh.setFormatter(formatter); 
 		this.name = name + ": ";
 	}
 	
@@ -52,17 +52,17 @@ public class Datensenke {
 	}
 	
 	public void logCollision(boolean own, int spotNo){
-//		if (own){
-//			logger.severe(this.name + "Kollision erkannt (selbst beteiligt) im Spot: " + spotNo);
-//		}
-//		else {
-//			logger.severe(this.name + "Kollision erkannt (unbeteiligt) im Spot: " + spotNo);
-//		}
+		if (own){
+			logger.severe(this.name + "Kollision erkannt (selbst beteiligt) im Spot: " + spotNo);
+		}
+		else {
+			logger.severe(this.name + "Kollision erkannt (unbeteiligt) im Spot: " + spotNo);
+		}
 	}
 	
 	public void logNewTimeSet(long oldTime, long newTime){
-//		if (oldTime != newTime)
-//			logger.severe(this.name + "Time changed: " + oldTime + " -> " + newTime);
+		if (oldTime != newTime)
+			logger.severe(this.name + "Time changed: " + oldTime + " -> " + newTime);
 	}
 	
 	public void logMessage(String message){
@@ -70,10 +70,10 @@ public class Datensenke {
 	}
 	
 	public void logMessageSevere(String message){
-//		logger.severe(this.name + message);
+		logger.severe(this.name + message);
 	}
 	
 	public void close(){
-//		this.fh.close();
+		this.fh.close();
 	}
 }
