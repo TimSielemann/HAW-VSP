@@ -144,7 +144,7 @@ public class Receiver extends Thread implements IReceiver {
 	private void listenOneFrame() throws IOException {
 		for(int i=0 ; i<(int) (FRAMETIME/SPOTTIME); i++){
 			long time = this.getTime();
-			this.datensenke.logMessageSevere("---------------FRAME:" + (time - (time%1000)) + "--------------------");
+//			this.datensenke.logMessageSevere("---------------FRAME:" + (time - (time%1000)) + "--------------------");
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
 		if (!this.hasSend){
@@ -156,21 +156,21 @@ public class Receiver extends Thread implements IReceiver {
 			this.sendFrames +=1;
 		}
 		this.nextSlotLast = this.nextSlot;
-		this.datensenke.logMessageSevere("Receiver: " + this.name + " reservedSlots: " + Arrays.toString(this.reservedSpots));
+//		this.datensenke.logMessageSevere("Receiver: " + this.name + " reservedSlots: " + Arrays.toString(this.reservedSpots));
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
-		this.datensenke.logMessageSevere("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
+//		this.datensenke.logMessageSevere("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
 		this.datensenke.logMessageSevere("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
 		this.hasSend = false;
 		if (timecount > 0){
 			int newOffset = (this.sumOffset / this.timecount);
-			datensenke.logNewTimeSet(this.timeOffset, newOffset);
+//			datensenke.logNewTimeSet(this.timeOffset, newOffset);
 			if (this.type == 'B'){
 				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
 			}
 			else {
 				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
 			}
-			this.datensenke.logMessageSevere("OffsetNew"+this.timeOffset);
+//			this.datensenke.logMessageSevere("OffsetNew"+this.timeOffset);
 		}
 		
 		this.timecount = 0;
