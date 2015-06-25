@@ -188,7 +188,9 @@ public class Receiver extends Thread implements IReceiver {
 	while (this.getTime() < endTime){
 			int timeout = (int) (endTime - this.getTime());
 			try {
-				Thread.sleep(timeout);
+				if (timeout > 0){
+					Thread.sleep(timeout);					
+				}
 			} catch (InterruptedException e) {
 				this.interrupt();
 			}
