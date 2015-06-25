@@ -66,8 +66,8 @@ public class ReceiverThread extends Thread {
 	}
 	
 	public synchronized List<ReceiveWrapObject> getMessages(){
-		List<ReceiveWrapObject> dest = new ArrayList<ReceiveWrapObject>();
-		Collections.copy(dest, this.messages);
+		List<ReceiveWrapObject> dest = new ArrayList<ReceiveWrapObject>(this.messages);
+//		.copy(dest, this.messages);
 		this.messages.clear();
 		return dest;
 	}
