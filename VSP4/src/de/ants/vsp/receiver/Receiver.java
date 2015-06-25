@@ -42,6 +42,7 @@ public class Receiver extends Thread implements IReceiver {
 	private boolean hasSend;
 	private int timecount = 0;
 	private int sumOffset = 0;
+	private ReceiverThread recThread;
 	
 	public static void main(String[] args) throws NumberFormatException, SecurityException, IOException{
 		Receiver receiver = new Receiver(args[0].charAt(0), args[1], args[2], Integer.parseInt(args[3]), Long.parseLong(args[4]), Integer.parseInt(args[5]));
@@ -73,6 +74,8 @@ public class Receiver extends Thread implements IReceiver {
 		this.sender = sender;
 		this.nextSlot = -1;
 		this.datensenke.logMessage("Receiver initialised");
+		this.recThread = new ReceiverThread(this.port, this.ifname, this.inetadress, this);
+		
 	}
 
 
@@ -111,6 +114,7 @@ public class Receiver extends Thread implements IReceiver {
 	public void run() {
 		super.run();
 		try {	
+			this.recThread.start();
 			//Warten bis tats�chlich ein Frame beginnt...
 			// (Entwurf)
 			try {
@@ -173,38 +177,59 @@ public class Receiver extends Thread implements IReceiver {
 		this.sumOffset = 0;
 	}
 
-
+	
 	private void listenOneSpot(long startTime, long endTime, int spotNo) throws IOException {
-		//Wenn wir uns im Sender Spot befinden, muss der Sender benachrichtigt werden, dass er jetzt senden darf
-		// Entwurf (neu)
-		if (spotNo == this.nextSlot){
-			this.nextSlot = 0;
-			sender.notifySender(endTime);
-		}
-		try {
-			int timeout = (int) (endTime - this.getTime());
-			if (timeout > 0 ){
-				socket.setSoTimeout(timeout);				
-			}
-		} catch (SocketException e) {
-			e.printStackTrace();
-		}
-		while (this.getTime() < endTime){
-			byte[] buffer = new byte[34];
-			DatagramPacket packet = new DatagramPacket(buffer, 34);
-			try {
-				int timeout = (int) (endTime - this.getTime());
-				if (timeout > 0 ){
-					socket.setSoTimeout(timeout);				
-					socket.receive(packet);
-					this.messages.add(new ReceiveWrapObject(packet.getData(), this.getTime()));
-				}
-			}	catch (SocketTimeoutException e){
-				//Nothing TODO.				
-			}
-		}
-		this.handleMessage(spotNo);
+	//Wenn wir uns im Sender Spot befinden, muss der Sender benachrichtigt werden, dass er jetzt senden darf
+	// Entwurf (neu)
+	if (spotNo == this.nextSlot){
+		this.nextSlot = 0;
+		sender.notifySender(endTime);
 	}
+	while (this.getTime() < endTime){
+			int timeout = (int) (endTime - this.getTime());
+			try {
+				Thread.sleep(timeout);
+			} catch (InterruptedException e) {
+				this.interrupt();
+			}
+			
+	}
+	this.messages = this.recThread.getMessages();
+	this.handleMessage(spotNo);
+}
+
+
+//	private void listenOneSpot(long startTime, long endTime, int spotNo) throws IOException {
+//		//Wenn wir uns im Sender Spot befinden, muss der Sender benachrichtigt werden, dass er jetzt senden darf
+//		// Entwurf (neu)
+//		if (spotNo == this.nextSlot){
+//			this.nextSlot = 0;
+//			sender.notifySender(endTime);
+//		}
+//		try {
+//			int timeout = (int) (endTime - this.getTime());
+//			if (timeout > 0 ){
+//				socket.setSoTimeout(timeout);				
+//			}
+//		} catch (SocketException e) {
+//			e.printStackTrace();
+//		}
+//		while (this.getTime() < endTime){
+//			byte[] buffer = new byte[34];
+//			DatagramPacket packet = new DatagramPacket(buffer, 34);
+//			try {
+//				int timeout = (int) (endTime - this.getTime());
+//				if (timeout > 0 ){
+//					socket.setSoTimeout(timeout);				
+//					socket.receive(packet);
+//					this.messages.add(new ReceiveWrapObject(packet.getData(), this.getTime()));
+//				}
+//			}	catch (SocketTimeoutException e){
+//				//Nothing TODO.				
+//			}
+//		}
+//		this.handleMessage(spotNo);
+//	}
 
 
 	private void handleMessage(int spotNo) {
