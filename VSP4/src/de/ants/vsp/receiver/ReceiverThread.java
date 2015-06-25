@@ -10,7 +10,7 @@ import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-
+@Deprecated
 public class ReceiverThread extends Thread {
 
 
