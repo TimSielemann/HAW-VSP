@@ -78,7 +78,7 @@ public class Sender extends Thread implements ISender {
 	public void sendData() throws SocketException {
 		this.hasSend = false;
 		try {
-			Thread.sleep(Receiver.SPOTTIME / 3);
+			Thread.sleep(Receiver.SPOTTIME / 2);
 		} catch (InterruptedException e1) {
 			this.interrupt();
 		}

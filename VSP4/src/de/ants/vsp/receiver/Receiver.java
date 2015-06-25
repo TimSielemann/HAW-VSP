@@ -142,11 +142,13 @@ public class Receiver extends Thread implements IReceiver {
 	}
 	
 	private void listenOneFrame() throws IOException {
+		this.datensenke.logMessageSevere("Time: at Beginning of new Spot" + this.getTime() + "");
 		for(int i=0 ; i<(int) (FRAMETIME/SPOTTIME); i++){
 			long time = this.getTime();
 //			this.datensenke.logMessageSevere("---------------FRAME:" + (time - (time%1000)) + "--------------------");
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
+		this.datensenke.logMessageSevere("Time: after all Spots" + this.getTime() + "");
 		if (!this.hasSend){
 			this.nextSlot = this.getSlotForCollusion();
 			this.notSendFrames +=1;
@@ -230,6 +232,8 @@ public class Receiver extends Thread implements IReceiver {
 				//Nothing TODO.				
 			}
 		}
+		if (type == 'A')
+			this.datensenke.logMessageSevere("Time Waked Up: " + this.getTime() + " EndTime was: " + endTime + " Spot was: " + spotNo);
 		this.handleMessage(spotNo);
 	}
 
