@@ -95,7 +95,7 @@ public class Sender extends Thread implements ISender {
 				// 
 			}
 			else 
-				this.datensenke.logMessage("It's to late for sending the Message aborded...");
+				this.datensenke.logMessageSevere("It's to late for sending the Message aborded...");
 			
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
@@ -103,7 +103,7 @@ public class Sender extends Thread implements ISender {
 			}
 		}
 		else
-			this.datensenke.logMessage("Sending Message would have coused a Collusion aborded...");
+			this.datensenke.logMessageSevere("Sending Message would have coused a Collusion aborded...");
 	}
 	
 	private boolean rightTimeToSend() {

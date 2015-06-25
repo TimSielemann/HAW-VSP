@@ -146,6 +146,7 @@ public class Receiver extends Thread implements IReceiver {
 		if (!this.hasSend){
 			this.nextSlot = this.getSlotForCollusion();
 			this.notSendFrames +=1;
+			this.datensenke.logMessageSevere("has not send! " + this.nextSlot + " will be the next..." );
 		}
 		else {
 			this.sendFrames +=1;
