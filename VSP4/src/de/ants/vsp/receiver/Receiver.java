@@ -139,7 +139,7 @@ public class Receiver extends Thread implements IReceiver {
 	
 	private void listenOneFrame() throws IOException {
 		long time = this.getTime();
-		System.out.println("---------------FRAME:" + (time - (time%1000)) + "--------------------");
+		this.datensenke.logMessageSevere("---------------FRAME:" + (time - (time%1000)) + "--------------------");
 		for(int i=0 ; i<(int) (FRAMETIME/SPOTTIME); i++){
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
@@ -151,10 +151,10 @@ public class Receiver extends Thread implements IReceiver {
 			this.sendFrames +=1;
 		}
 		this.nextSlotLast = this.nextSlot;
-		//this.datensenke.logMessage("Receiver: " + this.name + " reservedSlots: " + Arrays.toString(this.reservedSpots));
+		this.datensenke.logMessageSevere("Receiver: " + this.name + " reservedSlots: " + Arrays.toString(this.reservedSpots));
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];
-//		this.datensenke.logMessage("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
-		this.datensenke.logMessage("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
+		this.datensenke.logMessageSevere("Receiver: " + this.name + " will send at slot " + this.nextSlot + ". Received Message? " + this.sender.hasSend());
+		this.datensenke.logMessageSevere("Receiver: " + this.name + " Frames Send: " + this.sendFrames + " Frames not Send: " + this.notSendFrames);
 		this.hasSend = false;
 		if (timecount > 0){
 			int newOffset = (this.sumOffset / this.timecount);
@@ -166,7 +166,7 @@ public class Receiver extends Thread implements IReceiver {
 			else {
 				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
 			}
-			System.out.println("OffsetNew"+this.timeOffset);
+			this.datensenke.logMessageSevere("OffsetNew"+this.timeOffset);
 		}
 		
 		this.timecount = 0;

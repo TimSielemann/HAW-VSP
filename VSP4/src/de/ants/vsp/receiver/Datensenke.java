@@ -16,11 +16,12 @@ public class Datensenke {
 	public Datensenke(String name) throws SecurityException, IOException{
 		logger = Logger.getLogger("VSP");
 		logger.setLevel(Level.SEVERE);
-		// This block configure the logger with handler and formatter  
-//        fh = new FileHandler("./" +  name +  ".log");  
-//		logger.addHandler(fh);
-//		SimpleFormatter formatter = new SimpleFormatter();  
-//		fh.setFormatter(formatter);  
+		logger.setUseParentHandlers(false);
+//		 This block configure the logger with handler and formatter  
+        fh = new FileHandler("./" +  name +  ".log");  
+		logger.addHandler(fh);
+		SimpleFormatter formatter = new SimpleFormatter();  
+		fh.setFormatter(formatter); 
 		this.name = name + ": ";
 	}
 	
@@ -69,7 +70,7 @@ public class Datensenke {
 	}
 	
 	public void logMessageSevere(String message){
-//		logger.severe(this.name + message);
+		logger.severe(this.name + message);
 	}
 	
 	public void close(){
