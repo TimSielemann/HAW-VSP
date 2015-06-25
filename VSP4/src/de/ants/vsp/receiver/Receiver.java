@@ -138,8 +138,9 @@ public class Receiver extends Thread implements IReceiver {
 	}
 	
 	private void listenOneFrame() throws IOException {
+		long time = this.getTime();
+		System.out.println("---------------FRAME:" + (time - (time%1000)) + "--------------------");
 		for(int i=0 ; i<(int) (FRAMETIME/SPOTTIME); i++){
-			long time = this.getTime();
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
 		if (!this.hasSend){
@@ -157,7 +158,7 @@ public class Receiver extends Thread implements IReceiver {
 		this.hasSend = false;
 		if (timecount > 0){
 			int newOffset = (this.sumOffset / this.timecount);
-			
+			System.out.println("OffsetOld:" +this.timeOffset);
 			datensenke.logNewTimeSet(this.timeOffset, newOffset);
 			if (this.type == 'B'){
 				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
@@ -165,7 +166,9 @@ public class Receiver extends Thread implements IReceiver {
 			else {
 				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
 			}
+			System.out.println("OffsetNew"+this.timeOffset);
 		}
+		
 		this.timecount = 0;
 		this.sumOffset = 0;
 	}
@@ -190,11 +193,11 @@ public class Receiver extends Thread implements IReceiver {
 			byte[] buffer = new byte[34];
 			DatagramPacket packet = new DatagramPacket(buffer, 34);
 			try {
-				socket.receive(packet);
-				this.messages.add(new ReceiveWrapObject(packet.getData(), this.getTime()));
 				int timeout = (int) (endTime - this.getTime());
 				if (timeout > 0 ){
 					socket.setSoTimeout(timeout);				
+					socket.receive(packet);
+					this.messages.add(new ReceiveWrapObject(packet.getData(), this.getTime()));
 				}
 			}	catch (SocketTimeoutException e){
 				//Nothing TODO.				
