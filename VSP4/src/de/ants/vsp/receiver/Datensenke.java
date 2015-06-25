@@ -17,11 +17,11 @@ public class Datensenke {
 		logger = Logger.getLogger("VSP");
 		logger.setLevel(Level.SEVERE);
 		logger.setUseParentHandlers(false);
-//		 This block configure the logger with handler and formatter  
-        fh = new FileHandler("./" +  name +  ".log");  
-		logger.addHandler(fh);
-		SimpleFormatter formatter = new SimpleFormatter();  
-		fh.setFormatter(formatter); 
+////		 This block configure the logger with handler and formatter  
+//        fh = new FileHandler("./" +  name +  ".log");  
+//		logger.addHandler(fh);
+//		SimpleFormatter formatter = new SimpleFormatter();  
+//		fh.setFormatter(formatter); 
 		this.name = name + ": ";
 	}
 	
@@ -70,7 +70,7 @@ public class Datensenke {
 	}
 	
 	public void logMessageSevere(String message){
-		logger.severe(this.name + message);
+//		logger.severe(this.name + message);
 	}
 	
 	public void close(){

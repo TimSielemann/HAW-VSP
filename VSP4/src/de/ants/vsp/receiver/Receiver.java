@@ -159,7 +159,6 @@ public class Receiver extends Thread implements IReceiver {
 		this.hasSend = false;
 		if (timecount > 0){
 			int newOffset = (this.sumOffset / this.timecount);
-			System.out.println("OffsetOld:" +this.timeOffset);
 			datensenke.logNewTimeSet(this.timeOffset, newOffset);
 			if (this.type == 'B'){
 				this.timeOffset = this.timeOffset + Math.round((float)newOffset/4.0f);
