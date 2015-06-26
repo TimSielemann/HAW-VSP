@@ -9,8 +9,10 @@ import java.net.SocketAddress;
 import java.net.SocketException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
-@Deprecated
+import java.util.Queue;
+//@Deprecated
 public class ReceiverThread extends Thread {
 
 
@@ -19,7 +21,7 @@ public class ReceiverThread extends Thread {
 	private String ifname;
 	private InetAddress inetadress;
 	private Receiver receiver;
-	private List<ReceiveWrapObject> messages;	
+	private Queue<ReceiveWrapObject> messages;	
 	
 	public ReceiverThread(int port, String ifname, InetAddress inetadress,
 			Receiver receiver) {
@@ -28,7 +30,7 @@ public class ReceiverThread extends Thread {
 		this.ifname = ifname;
 		this.inetadress = inetadress;
 		this.receiver = receiver;
-		this.messages = new ArrayList<ReceiveWrapObject>();
+		this.messages = new LinkedList<ReceiveWrapObject>();
 	}
 	
 	
@@ -65,10 +67,13 @@ public class ReceiverThread extends Thread {
 		}
 	}
 	
-	public synchronized List<ReceiveWrapObject> getMessages(){
-		List<ReceiveWrapObject> dest = new ArrayList<ReceiveWrapObject>(this.messages);
+	public synchronized List<ReceiveWrapObject> getMessages(long endtime){
+		List<ReceiveWrapObject> dest = new ArrayList<ReceiveWrapObject>();
 //		.copy(dest, this.messages);
-		this.messages.clear();
+//		this.messages.clear();
+		while (this.messages.peek() != null && this.messages.peek().getTimeReceived() <= endtime){
+			dest.add(this.messages.poll());
+		}
 		return dest;
 	}
 	
@@ -76,4 +81,7 @@ public class ReceiverThread extends Thread {
 		this.messages.add(obj);
 	}
 	
+	public int getMessageSize(){
+		return this.messages.size();
+	}
 }
