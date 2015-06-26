@@ -65,6 +65,7 @@ public class Receiver extends Thread implements IReceiver {
 		else {
 			this.name = "team 07-" + nr;
 		}
+		this.setPriority(Thread.MAX_PRIORITY);
 		//this.initSocket();
 		this.inetadress = InetAddress.getByName(host);
 		this.reservedSpots = new int[(int) (FRAMETIME/SPOTTIME)];

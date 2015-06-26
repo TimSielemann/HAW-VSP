@@ -41,6 +41,7 @@ public class Sender extends Thread implements ISender {
 		sendBuffer.start();
 		this.type = type;
 		this.ifname = ifname;
+		this.setPriority(Thread.MAX_PRIORITY);
 		socket = new MulticastSocket(this.port);
 		socket.setTimeToLive(1);
 		socket.joinGroup(this.ip);
