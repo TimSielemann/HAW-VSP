@@ -145,8 +145,9 @@ public class Receiver extends Thread implements IReceiver {
 	
 	private void listenOneFrame() throws IOException {
 		this.datensenke.logMessageSevere("Time: at Beginning of new Spot" + this.getTime() + "");
+		long time = this.getTime();
 		for(int i=0 ; i<(int) (FRAMETIME/SPOTTIME); i++){
-			long time = this.getTime();
+//			long time = this.getTime();
 //			this.datensenke.logMessageSevere("---------------FRAME:" + (time - (time%1000)) + "--------------------");
 			listenOneSpot(time - (time%1000) + i*SPOTTIME , time - (time%1000) + (i+1)*SPOTTIME, i+1);
 		}
