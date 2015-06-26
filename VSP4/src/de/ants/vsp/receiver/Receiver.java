@@ -199,7 +199,7 @@ public class Receiver extends Thread implements IReceiver {
 			}
 			
 //	}
-	this.messages = this.recThread.getMessages(endTime);
+	this.messages = this.recThread.getMessages(endTime-1);
 	this.handleMessage(spotNo);
 }
 
