@@ -1,0 +1,1336 @@
+Jun 26, 2015 11:38:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311537008
+Jun 26, 2015 11:38:57 AM de.ants.vsp.receiver.Datensenke logCollision
+SEVERE: team 07-22: Kollision erkannt (unbeteiligt) im Spot: 25
+Jun 26, 2015 11:38:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311538005
+Jun 26, 2015 11:38:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: has not send! 21 will be the next...
+Jun 26, 2015 11:38:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 0 Frames not Send: 1
+Jun 26, 2015 11:38:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311538024
+Jun 26, 2015 11:38:58 AM de.ants.vsp.receiver.Datensenke logCollision
+SEVERE: team 07-22: Kollision erkannt (unbeteiligt) im Spot: 22
+Jun 26, 2015 11:38:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311539069
+Jun 26, 2015 11:38:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 1 Frames not Send: 1
+Jun 26, 2015 11:38:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311539084
+Jun 26, 2015 11:38:59 AM de.ants.vsp.receiver.Datensenke logCollision
+SEVERE: team 07-22: Kollision erkannt (unbeteiligt) im Spot: 20
+Jun 26, 2015 11:38:59 AM de.ants.vsp.receiver.Datensenke logCollision
+SEVERE: team 07-22: Kollision erkannt (unbeteiligt) im Spot: 22
+Jun 26, 2015 11:39:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311540013
+Jun 26, 2015 11:39:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 2 Frames not Send: 1
+Jun 26, 2015 11:39:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311540023
+Jun 26, 2015 11:39:00 AM de.ants.vsp.receiver.Datensenke logCollision
+SEVERE: team 07-22: Kollision erkannt (unbeteiligt) im Spot: 21
+Jun 26, 2015 11:39:00 AM de.ants.vsp.receiver.Datensenke logCollision
+SEVERE: team 07-22: Kollision erkannt (unbeteiligt) im Spot: 25
+Jun 26, 2015 11:39:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311541015
+Jun 26, 2015 11:39:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 3 Frames not Send: 1
+Jun 26, 2015 11:39:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311541032
+Jun 26, 2015 11:39:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311542001
+Jun 26, 2015 11:39:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 4 Frames not Send: 1
+Jun 26, 2015 11:39:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311542014
+Jun 26, 2015 11:39:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311543010
+Jun 26, 2015 11:39:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 5 Frames not Send: 1
+Jun 26, 2015 11:39:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311543024
+Jun 26, 2015 11:39:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311544000
+Jun 26, 2015 11:39:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 6 Frames not Send: 1
+Jun 26, 2015 11:39:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311544014
+Jun 26, 2015 11:39:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311545000
+Jun 26, 2015 11:39:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 7 Frames not Send: 1
+Jun 26, 2015 11:39:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311545021
+Jun 26, 2015 11:39:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311546007
+Jun 26, 2015 11:39:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 8 Frames not Send: 1
+Jun 26, 2015 11:39:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311546018
+Jun 26, 2015 11:39:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311547022
+Jun 26, 2015 11:39:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 9 Frames not Send: 1
+Jun 26, 2015 11:39:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311547045
+Jun 26, 2015 11:39:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311548009
+Jun 26, 2015 11:39:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 10 Frames not Send: 1
+Jun 26, 2015 11:39:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311548020
+Jun 26, 2015 11:39:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311549003
+Jun 26, 2015 11:39:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 11 Frames not Send: 1
+Jun 26, 2015 11:39:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311549011
+Jun 26, 2015 11:39:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311550004
+Jun 26, 2015 11:39:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 12 Frames not Send: 1
+Jun 26, 2015 11:39:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311550019
+Jun 26, 2015 11:39:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311551003
+Jun 26, 2015 11:39:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 13 Frames not Send: 1
+Jun 26, 2015 11:39:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311551010
+Jun 26, 2015 11:39:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311552000
+Jun 26, 2015 11:39:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 14 Frames not Send: 1
+Jun 26, 2015 11:39:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311552011
+Jun 26, 2015 11:39:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311553008
+Jun 26, 2015 11:39:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 15 Frames not Send: 1
+Jun 26, 2015 11:39:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311553016
+Jun 26, 2015 11:39:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311554001
+Jun 26, 2015 11:39:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 16 Frames not Send: 1
+Jun 26, 2015 11:39:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311554007
+Jun 26, 2015 11:39:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311555009
+Jun 26, 2015 11:39:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 17 Frames not Send: 1
+Jun 26, 2015 11:39:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311555014
+Jun 26, 2015 11:39:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311556008
+Jun 26, 2015 11:39:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 18 Frames not Send: 1
+Jun 26, 2015 11:39:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311556014
+Jun 26, 2015 11:39:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311557004
+Jun 26, 2015 11:39:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 19 Frames not Send: 1
+Jun 26, 2015 11:39:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311557011
+Jun 26, 2015 11:39:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311558006
+Jun 26, 2015 11:39:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 20 Frames not Send: 1
+Jun 26, 2015 11:39:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311558032
+Jun 26, 2015 11:39:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311559000
+Jun 26, 2015 11:39:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 21 Frames not Send: 1
+Jun 26, 2015 11:39:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311559028
+Jun 26, 2015 11:39:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311560007
+Jun 26, 2015 11:39:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 22 Frames not Send: 1
+Jun 26, 2015 11:39:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311560013
+Jun 26, 2015 11:39:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311561007
+Jun 26, 2015 11:39:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 23 Frames not Send: 1
+Jun 26, 2015 11:39:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311561011
+Jun 26, 2015 11:39:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311562000
+Jun 26, 2015 11:39:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 24 Frames not Send: 1
+Jun 26, 2015 11:39:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311562005
+Jun 26, 2015 11:39:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311563000
+Jun 26, 2015 11:39:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 25 Frames not Send: 1
+Jun 26, 2015 11:39:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311563003
+Jun 26, 2015 11:39:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311564002
+Jun 26, 2015 11:39:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 26 Frames not Send: 1
+Jun 26, 2015 11:39:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311564009
+Jun 26, 2015 11:39:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311565002
+Jun 26, 2015 11:39:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 27 Frames not Send: 1
+Jun 26, 2015 11:39:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311565006
+Jun 26, 2015 11:39:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311566008
+Jun 26, 2015 11:39:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 28 Frames not Send: 1
+Jun 26, 2015 11:39:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311566017
+Jun 26, 2015 11:39:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311567001
+Jun 26, 2015 11:39:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 29 Frames not Send: 1
+Jun 26, 2015 11:39:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311567006
+Jun 26, 2015 11:39:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311568002
+Jun 26, 2015 11:39:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 30 Frames not Send: 1
+Jun 26, 2015 11:39:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311568008
+Jun 26, 2015 11:39:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311569003
+Jun 26, 2015 11:39:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 31 Frames not Send: 1
+Jun 26, 2015 11:39:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311569017
+Jun 26, 2015 11:39:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311570004
+Jun 26, 2015 11:39:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 32 Frames not Send: 1
+Jun 26, 2015 11:39:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311570011
+Jun 26, 2015 11:39:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311571000
+Jun 26, 2015 11:39:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 33 Frames not Send: 1
+Jun 26, 2015 11:39:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311571010
+Jun 26, 2015 11:39:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311572000
+Jun 26, 2015 11:39:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 34 Frames not Send: 1
+Jun 26, 2015 11:39:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311572004
+Jun 26, 2015 11:39:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311573001
+Jun 26, 2015 11:39:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 35 Frames not Send: 1
+Jun 26, 2015 11:39:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311573007
+Jun 26, 2015 11:39:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311574000
+Jun 26, 2015 11:39:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 36 Frames not Send: 1
+Jun 26, 2015 11:39:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311574004
+Jun 26, 2015 11:39:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311575002
+Jun 26, 2015 11:39:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 37 Frames not Send: 1
+Jun 26, 2015 11:39:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311575012
+Jun 26, 2015 11:39:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311576008
+Jun 26, 2015 11:39:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 38 Frames not Send: 1
+Jun 26, 2015 11:39:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311576022
+Jun 26, 2015 11:39:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311577000
+Jun 26, 2015 11:39:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 39 Frames not Send: 1
+Jun 26, 2015 11:39:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311577011
+Jun 26, 2015 11:39:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311578000
+Jun 26, 2015 11:39:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 40 Frames not Send: 1
+Jun 26, 2015 11:39:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311578006
+Jun 26, 2015 11:39:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311579001
+Jun 26, 2015 11:39:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 41 Frames not Send: 1
+Jun 26, 2015 11:39:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311579012
+Jun 26, 2015 11:39:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311580000
+Jun 26, 2015 11:39:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 42 Frames not Send: 1
+Jun 26, 2015 11:39:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311580009
+Jun 26, 2015 11:39:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311581004
+Jun 26, 2015 11:39:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 43 Frames not Send: 1
+Jun 26, 2015 11:39:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311581010
+Jun 26, 2015 11:39:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311582003
+Jun 26, 2015 11:39:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 44 Frames not Send: 1
+Jun 26, 2015 11:39:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311582008
+Jun 26, 2015 11:39:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311583000
+Jun 26, 2015 11:39:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 45 Frames not Send: 1
+Jun 26, 2015 11:39:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311583015
+Jun 26, 2015 11:39:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311584000
+Jun 26, 2015 11:39:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 46 Frames not Send: 1
+Jun 26, 2015 11:39:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311584011
+Jun 26, 2015 11:39:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311585000
+Jun 26, 2015 11:39:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 47 Frames not Send: 1
+Jun 26, 2015 11:39:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311585005
+Jun 26, 2015 11:39:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311586000
+Jun 26, 2015 11:39:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 48 Frames not Send: 1
+Jun 26, 2015 11:39:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311586003
+Jun 26, 2015 11:39:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311587000
+Jun 26, 2015 11:39:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 49 Frames not Send: 1
+Jun 26, 2015 11:39:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311587012
+Jun 26, 2015 11:39:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311588000
+Jun 26, 2015 11:39:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 50 Frames not Send: 1
+Jun 26, 2015 11:39:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311588006
+Jun 26, 2015 11:39:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311589000
+Jun 26, 2015 11:39:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 51 Frames not Send: 1
+Jun 26, 2015 11:39:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311589005
+Jun 26, 2015 11:39:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311590008
+Jun 26, 2015 11:39:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 52 Frames not Send: 1
+Jun 26, 2015 11:39:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311590011
+Jun 26, 2015 11:39:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311591000
+Jun 26, 2015 11:39:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 53 Frames not Send: 1
+Jun 26, 2015 11:39:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311591035
+Jun 26, 2015 11:39:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311592000
+Jun 26, 2015 11:39:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 54 Frames not Send: 1
+Jun 26, 2015 11:39:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311592011
+Jun 26, 2015 11:39:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311593000
+Jun 26, 2015 11:39:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 55 Frames not Send: 1
+Jun 26, 2015 11:39:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311593005
+Jun 26, 2015 11:39:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311594000
+Jun 26, 2015 11:39:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 56 Frames not Send: 1
+Jun 26, 2015 11:39:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311594005
+Jun 26, 2015 11:39:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311595003
+Jun 26, 2015 11:39:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 57 Frames not Send: 1
+Jun 26, 2015 11:39:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311595012
+Jun 26, 2015 11:39:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311596000
+Jun 26, 2015 11:39:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 58 Frames not Send: 1
+Jun 26, 2015 11:39:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311596022
+Jun 26, 2015 11:39:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311597003
+Jun 26, 2015 11:39:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 59 Frames not Send: 1
+Jun 26, 2015 11:39:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311597010
+Jun 26, 2015 11:39:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311598002
+Jun 26, 2015 11:39:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 60 Frames not Send: 1
+Jun 26, 2015 11:39:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311598018
+Jun 26, 2015 11:39:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311599001
+Jun 26, 2015 11:39:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 61 Frames not Send: 1
+Jun 26, 2015 11:39:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311599006
+Jun 26, 2015 11:39:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311600002
+Jun 26, 2015 11:39:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 62 Frames not Send: 1
+Jun 26, 2015 11:39:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311600008
+Jun 26, 2015 11:40:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311601000
+Jun 26, 2015 11:40:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 63 Frames not Send: 1
+Jun 26, 2015 11:40:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311601006
+Jun 26, 2015 11:40:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311602000
+Jun 26, 2015 11:40:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 64 Frames not Send: 1
+Jun 26, 2015 11:40:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311602007
+Jun 26, 2015 11:40:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311603000
+Jun 26, 2015 11:40:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 65 Frames not Send: 1
+Jun 26, 2015 11:40:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311603008
+Jun 26, 2015 11:40:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311604000
+Jun 26, 2015 11:40:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 66 Frames not Send: 1
+Jun 26, 2015 11:40:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311604019
+Jun 26, 2015 11:40:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311605002
+Jun 26, 2015 11:40:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 67 Frames not Send: 1
+Jun 26, 2015 11:40:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311605005
+Jun 26, 2015 11:40:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311606001
+Jun 26, 2015 11:40:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 68 Frames not Send: 1
+Jun 26, 2015 11:40:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311606019
+Jun 26, 2015 11:40:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311607000
+Jun 26, 2015 11:40:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 69 Frames not Send: 1
+Jun 26, 2015 11:40:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311607009
+Jun 26, 2015 11:40:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311608001
+Jun 26, 2015 11:40:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 70 Frames not Send: 1
+Jun 26, 2015 11:40:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311608009
+Jun 26, 2015 11:40:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311609000
+Jun 26, 2015 11:40:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 71 Frames not Send: 1
+Jun 26, 2015 11:40:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311609011
+Jun 26, 2015 11:40:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311610008
+Jun 26, 2015 11:40:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 72 Frames not Send: 1
+Jun 26, 2015 11:40:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311610019
+Jun 26, 2015 11:40:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311611001
+Jun 26, 2015 11:40:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 73 Frames not Send: 1
+Jun 26, 2015 11:40:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311611009
+Jun 26, 2015 11:40:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311612000
+Jun 26, 2015 11:40:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 74 Frames not Send: 1
+Jun 26, 2015 11:40:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311612008
+Jun 26, 2015 11:40:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311613002
+Jun 26, 2015 11:40:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 75 Frames not Send: 1
+Jun 26, 2015 11:40:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311613008
+Jun 26, 2015 11:40:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311614000
+Jun 26, 2015 11:40:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 76 Frames not Send: 1
+Jun 26, 2015 11:40:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311614007
+Jun 26, 2015 11:40:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311615001
+Jun 26, 2015 11:40:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 77 Frames not Send: 1
+Jun 26, 2015 11:40:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311615008
+Jun 26, 2015 11:40:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311616006
+Jun 26, 2015 11:40:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 78 Frames not Send: 1
+Jun 26, 2015 11:40:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311616012
+Jun 26, 2015 11:40:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311617003
+Jun 26, 2015 11:40:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 79 Frames not Send: 1
+Jun 26, 2015 11:40:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311617018
+Jun 26, 2015 11:40:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311618000
+Jun 26, 2015 11:40:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 80 Frames not Send: 1
+Jun 26, 2015 11:40:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311618012
+Jun 26, 2015 11:40:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311619000
+Jun 26, 2015 11:40:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 81 Frames not Send: 1
+Jun 26, 2015 11:40:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311619029
+Jun 26, 2015 11:40:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311620012
+Jun 26, 2015 11:40:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 82 Frames not Send: 1
+Jun 26, 2015 11:40:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311620016
+Jun 26, 2015 11:40:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311621001
+Jun 26, 2015 11:40:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 83 Frames not Send: 1
+Jun 26, 2015 11:40:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311621006
+Jun 26, 2015 11:40:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311622002
+Jun 26, 2015 11:40:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 84 Frames not Send: 1
+Jun 26, 2015 11:40:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311622019
+Jun 26, 2015 11:40:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311623001
+Jun 26, 2015 11:40:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 85 Frames not Send: 1
+Jun 26, 2015 11:40:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311623006
+Jun 26, 2015 11:40:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311624001
+Jun 26, 2015 11:40:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 86 Frames not Send: 1
+Jun 26, 2015 11:40:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311624006
+Jun 26, 2015 11:40:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311625000
+Jun 26, 2015 11:40:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 87 Frames not Send: 1
+Jun 26, 2015 11:40:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311625008
+Jun 26, 2015 11:40:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311626001
+Jun 26, 2015 11:40:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 88 Frames not Send: 1
+Jun 26, 2015 11:40:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311626011
+Jun 26, 2015 11:40:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311627001
+Jun 26, 2015 11:40:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 89 Frames not Send: 1
+Jun 26, 2015 11:40:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311627006
+Jun 26, 2015 11:40:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311628000
+Jun 26, 2015 11:40:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 90 Frames not Send: 1
+Jun 26, 2015 11:40:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311628007
+Jun 26, 2015 11:40:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311629001
+Jun 26, 2015 11:40:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 91 Frames not Send: 1
+Jun 26, 2015 11:40:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311629008
+Jun 26, 2015 11:40:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311630000
+Jun 26, 2015 11:40:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 92 Frames not Send: 1
+Jun 26, 2015 11:40:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311630016
+Jun 26, 2015 11:40:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311631005
+Jun 26, 2015 11:40:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 93 Frames not Send: 1
+Jun 26, 2015 11:40:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311631015
+Jun 26, 2015 11:40:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311632000
+Jun 26, 2015 11:40:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 94 Frames not Send: 1
+Jun 26, 2015 11:40:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311632017
+Jun 26, 2015 11:40:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311633005
+Jun 26, 2015 11:40:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 95 Frames not Send: 1
+Jun 26, 2015 11:40:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311633009
+Jun 26, 2015 11:40:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311634000
+Jun 26, 2015 11:40:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 96 Frames not Send: 1
+Jun 26, 2015 11:40:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311634014
+Jun 26, 2015 11:40:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311635004
+Jun 26, 2015 11:40:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 97 Frames not Send: 1
+Jun 26, 2015 11:40:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311635011
+Jun 26, 2015 11:40:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311636001
+Jun 26, 2015 11:40:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 98 Frames not Send: 1
+Jun 26, 2015 11:40:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311636006
+Jun 26, 2015 11:40:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311637001
+Jun 26, 2015 11:40:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 99 Frames not Send: 1
+Jun 26, 2015 11:40:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311637006
+Jun 26, 2015 11:40:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311638000
+Jun 26, 2015 11:40:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 100 Frames not Send: 1
+Jun 26, 2015 11:40:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311638007
+Jun 26, 2015 11:40:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311639001
+Jun 26, 2015 11:40:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 101 Frames not Send: 1
+Jun 26, 2015 11:40:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311639008
+Jun 26, 2015 11:40:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311640000
+Jun 26, 2015 11:40:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 102 Frames not Send: 1
+Jun 26, 2015 11:40:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311640007
+Jun 26, 2015 11:40:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311641001
+Jun 26, 2015 11:40:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 103 Frames not Send: 1
+Jun 26, 2015 11:40:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311641006
+Jun 26, 2015 11:40:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311642000
+Jun 26, 2015 11:40:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 104 Frames not Send: 1
+Jun 26, 2015 11:40:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311642007
+Jun 26, 2015 11:40:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311643000
+Jun 26, 2015 11:40:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 105 Frames not Send: 1
+Jun 26, 2015 11:40:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311643005
+Jun 26, 2015 11:40:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311644000
+Jun 26, 2015 11:40:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 106 Frames not Send: 1
+Jun 26, 2015 11:40:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311644004
+Jun 26, 2015 11:40:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311645000
+Jun 26, 2015 11:40:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 107 Frames not Send: 1
+Jun 26, 2015 11:40:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311645006
+Jun 26, 2015 11:40:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311646000
+Jun 26, 2015 11:40:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 108 Frames not Send: 1
+Jun 26, 2015 11:40:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311646006
+Jun 26, 2015 11:40:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311647000
+Jun 26, 2015 11:40:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 109 Frames not Send: 1
+Jun 26, 2015 11:40:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311647008
+Jun 26, 2015 11:40:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311648001
+Jun 26, 2015 11:40:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 110 Frames not Send: 1
+Jun 26, 2015 11:40:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311648007
+Jun 26, 2015 11:40:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311649001
+Jun 26, 2015 11:40:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 111 Frames not Send: 1
+Jun 26, 2015 11:40:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311649006
+Jun 26, 2015 11:40:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311650000
+Jun 26, 2015 11:40:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 112 Frames not Send: 1
+Jun 26, 2015 11:40:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311650004
+Jun 26, 2015 11:40:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311651002
+Jun 26, 2015 11:40:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 113 Frames not Send: 1
+Jun 26, 2015 11:40:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311651010
+Jun 26, 2015 11:40:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311652002
+Jun 26, 2015 11:40:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 114 Frames not Send: 1
+Jun 26, 2015 11:40:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311652009
+Jun 26, 2015 11:40:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311653003
+Jun 26, 2015 11:40:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 115 Frames not Send: 1
+Jun 26, 2015 11:40:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311653010
+Jun 26, 2015 11:40:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311654000
+Jun 26, 2015 11:40:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 116 Frames not Send: 1
+Jun 26, 2015 11:40:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311654009
+Jun 26, 2015 11:40:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311655003
+Jun 26, 2015 11:40:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 117 Frames not Send: 1
+Jun 26, 2015 11:40:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311655012
+Jun 26, 2015 11:40:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311656001
+Jun 26, 2015 11:40:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 118 Frames not Send: 1
+Jun 26, 2015 11:40:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311656009
+Jun 26, 2015 11:40:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311657001
+Jun 26, 2015 11:40:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 119 Frames not Send: 1
+Jun 26, 2015 11:40:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311657007
+Jun 26, 2015 11:40:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311658001
+Jun 26, 2015 11:40:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 120 Frames not Send: 1
+Jun 26, 2015 11:40:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311658007
+Jun 26, 2015 11:40:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311659001
+Jun 26, 2015 11:40:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 121 Frames not Send: 1
+Jun 26, 2015 11:40:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311659007
+Jun 26, 2015 11:40:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311660002
+Jun 26, 2015 11:40:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 122 Frames not Send: 1
+Jun 26, 2015 11:40:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311660008
+Jun 26, 2015 11:41:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311661003
+Jun 26, 2015 11:41:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 123 Frames not Send: 1
+Jun 26, 2015 11:41:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311661009
+Jun 26, 2015 11:41:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311662009
+Jun 26, 2015 11:41:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 124 Frames not Send: 1
+Jun 26, 2015 11:41:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311662013
+Jun 26, 2015 11:41:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311663012
+Jun 26, 2015 11:41:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 125 Frames not Send: 1
+Jun 26, 2015 11:41:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311663016
+Jun 26, 2015 11:41:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311664000
+Jun 26, 2015 11:41:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 126 Frames not Send: 1
+Jun 26, 2015 11:41:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311664004
+Jun 26, 2015 11:41:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311665001
+Jun 26, 2015 11:41:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 127 Frames not Send: 1
+Jun 26, 2015 11:41:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311665006
+Jun 26, 2015 11:41:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311666000
+Jun 26, 2015 11:41:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 128 Frames not Send: 1
+Jun 26, 2015 11:41:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311666008
+Jun 26, 2015 11:41:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311667001
+Jun 26, 2015 11:41:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 129 Frames not Send: 1
+Jun 26, 2015 11:41:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311667005
+Jun 26, 2015 11:41:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311668001
+Jun 26, 2015 11:41:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 130 Frames not Send: 1
+Jun 26, 2015 11:41:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311668008
+Jun 26, 2015 11:41:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311669005
+Jun 26, 2015 11:41:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 131 Frames not Send: 1
+Jun 26, 2015 11:41:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311669011
+Jun 26, 2015 11:41:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311670000
+Jun 26, 2015 11:41:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 132 Frames not Send: 1
+Jun 26, 2015 11:41:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311670006
+Jun 26, 2015 11:41:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311671001
+Jun 26, 2015 11:41:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 133 Frames not Send: 1
+Jun 26, 2015 11:41:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311671037
+Jun 26, 2015 11:41:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311672002
+Jun 26, 2015 11:41:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 134 Frames not Send: 1
+Jun 26, 2015 11:41:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311672008
+Jun 26, 2015 11:41:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311673000
+Jun 26, 2015 11:41:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 135 Frames not Send: 1
+Jun 26, 2015 11:41:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311673012
+Jun 26, 2015 11:41:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311674003
+Jun 26, 2015 11:41:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 136 Frames not Send: 1
+Jun 26, 2015 11:41:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311674009
+Jun 26, 2015 11:41:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311675002
+Jun 26, 2015 11:41:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 137 Frames not Send: 1
+Jun 26, 2015 11:41:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311675011
+Jun 26, 2015 11:41:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311676001
+Jun 26, 2015 11:41:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 138 Frames not Send: 1
+Jun 26, 2015 11:41:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311676006
+Jun 26, 2015 11:41:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311677005
+Jun 26, 2015 11:41:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 139 Frames not Send: 1
+Jun 26, 2015 11:41:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311677010
+Jun 26, 2015 11:41:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311678000
+Jun 26, 2015 11:41:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 140 Frames not Send: 1
+Jun 26, 2015 11:41:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311678007
+Jun 26, 2015 11:41:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311679000
+Jun 26, 2015 11:41:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 141 Frames not Send: 1
+Jun 26, 2015 11:41:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311679015
+Jun 26, 2015 11:41:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311680002
+Jun 26, 2015 11:41:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 142 Frames not Send: 1
+Jun 26, 2015 11:41:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311680007
+Jun 26, 2015 11:41:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311681001
+Jun 26, 2015 11:41:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 143 Frames not Send: 1
+Jun 26, 2015 11:41:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311681008
+Jun 26, 2015 11:41:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311682000
+Jun 26, 2015 11:41:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 144 Frames not Send: 1
+Jun 26, 2015 11:41:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311682006
+Jun 26, 2015 11:41:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311683000
+Jun 26, 2015 11:41:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 145 Frames not Send: 1
+Jun 26, 2015 11:41:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311683005
+Jun 26, 2015 11:41:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311684000
+Jun 26, 2015 11:41:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 146 Frames not Send: 1
+Jun 26, 2015 11:41:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311684005
+Jun 26, 2015 11:41:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311685001
+Jun 26, 2015 11:41:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 147 Frames not Send: 1
+Jun 26, 2015 11:41:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311685006
+Jun 26, 2015 11:41:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311686000
+Jun 26, 2015 11:41:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 148 Frames not Send: 1
+Jun 26, 2015 11:41:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311686007
+Jun 26, 2015 11:41:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311687000
+Jun 26, 2015 11:41:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 149 Frames not Send: 1
+Jun 26, 2015 11:41:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311687008
+Jun 26, 2015 11:41:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311688000
+Jun 26, 2015 11:41:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 150 Frames not Send: 1
+Jun 26, 2015 11:41:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311688004
+Jun 26, 2015 11:41:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311689001
+Jun 26, 2015 11:41:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 151 Frames not Send: 1
+Jun 26, 2015 11:41:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311689006
+Jun 26, 2015 11:41:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311690000
+Jun 26, 2015 11:41:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 152 Frames not Send: 1
+Jun 26, 2015 11:41:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311690008
+Jun 26, 2015 11:41:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311691002
+Jun 26, 2015 11:41:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 153 Frames not Send: 1
+Jun 26, 2015 11:41:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311691008
+Jun 26, 2015 11:41:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311692000
+Jun 26, 2015 11:41:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 154 Frames not Send: 1
+Jun 26, 2015 11:41:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311692009
+Jun 26, 2015 11:41:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311693001
+Jun 26, 2015 11:41:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 155 Frames not Send: 1
+Jun 26, 2015 11:41:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311693005
+Jun 26, 2015 11:41:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311694002
+Jun 26, 2015 11:41:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 156 Frames not Send: 1
+Jun 26, 2015 11:41:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311694007
+Jun 26, 2015 11:41:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311695002
+Jun 26, 2015 11:41:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 157 Frames not Send: 1
+Jun 26, 2015 11:41:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311695007
+Jun 26, 2015 11:41:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311696001
+Jun 26, 2015 11:41:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 158 Frames not Send: 1
+Jun 26, 2015 11:41:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311696006
+Jun 26, 2015 11:41:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311697001
+Jun 26, 2015 11:41:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 159 Frames not Send: 1
+Jun 26, 2015 11:41:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311697007
+Jun 26, 2015 11:41:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311698001
+Jun 26, 2015 11:41:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 160 Frames not Send: 1
+Jun 26, 2015 11:41:37 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311698006
+Jun 26, 2015 11:41:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311699000
+Jun 26, 2015 11:41:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 161 Frames not Send: 1
+Jun 26, 2015 11:41:38 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311699005
+Jun 26, 2015 11:41:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311700001
+Jun 26, 2015 11:41:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 162 Frames not Send: 1
+Jun 26, 2015 11:41:39 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311700006
+Jun 26, 2015 11:41:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311701000
+Jun 26, 2015 11:41:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 163 Frames not Send: 1
+Jun 26, 2015 11:41:40 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311701007
+Jun 26, 2015 11:41:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311702002
+Jun 26, 2015 11:41:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 164 Frames not Send: 1
+Jun 26, 2015 11:41:41 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311702005
+Jun 26, 2015 11:41:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311703000
+Jun 26, 2015 11:41:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 165 Frames not Send: 1
+Jun 26, 2015 11:41:42 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311703008
+Jun 26, 2015 11:41:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311704002
+Jun 26, 2015 11:41:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 166 Frames not Send: 1
+Jun 26, 2015 11:41:43 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311704008
+Jun 26, 2015 11:41:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311705000
+Jun 26, 2015 11:41:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 167 Frames not Send: 1
+Jun 26, 2015 11:41:44 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311705006
+Jun 26, 2015 11:41:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311706000
+Jun 26, 2015 11:41:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 168 Frames not Send: 1
+Jun 26, 2015 11:41:45 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311706005
+Jun 26, 2015 11:41:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311707001
+Jun 26, 2015 11:41:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 169 Frames not Send: 1
+Jun 26, 2015 11:41:46 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311707005
+Jun 26, 2015 11:41:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311708000
+Jun 26, 2015 11:41:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 170 Frames not Send: 1
+Jun 26, 2015 11:41:47 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311708006
+Jun 26, 2015 11:41:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311709000
+Jun 26, 2015 11:41:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 171 Frames not Send: 1
+Jun 26, 2015 11:41:48 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311709004
+Jun 26, 2015 11:41:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311710000
+Jun 26, 2015 11:41:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 172 Frames not Send: 1
+Jun 26, 2015 11:41:49 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311710009
+Jun 26, 2015 11:41:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311711001
+Jun 26, 2015 11:41:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 173 Frames not Send: 1
+Jun 26, 2015 11:41:50 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311711005
+Jun 26, 2015 11:41:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311712000
+Jun 26, 2015 11:41:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 174 Frames not Send: 1
+Jun 26, 2015 11:41:51 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311712006
+Jun 26, 2015 11:41:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311713000
+Jun 26, 2015 11:41:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 175 Frames not Send: 1
+Jun 26, 2015 11:41:52 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311713004
+Jun 26, 2015 11:41:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311714000
+Jun 26, 2015 11:41:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 176 Frames not Send: 1
+Jun 26, 2015 11:41:53 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311714006
+Jun 26, 2015 11:41:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311715000
+Jun 26, 2015 11:41:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 177 Frames not Send: 1
+Jun 26, 2015 11:41:54 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311715004
+Jun 26, 2015 11:41:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311716000
+Jun 26, 2015 11:41:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 178 Frames not Send: 1
+Jun 26, 2015 11:41:55 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311716004
+Jun 26, 2015 11:41:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311717000
+Jun 26, 2015 11:41:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 179 Frames not Send: 1
+Jun 26, 2015 11:41:56 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311717006
+Jun 26, 2015 11:41:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311718000
+Jun 26, 2015 11:41:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 180 Frames not Send: 1
+Jun 26, 2015 11:41:57 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311718004
+Jun 26, 2015 11:41:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311719000
+Jun 26, 2015 11:41:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 181 Frames not Send: 1
+Jun 26, 2015 11:41:58 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311719005
+Jun 26, 2015 11:41:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311720001
+Jun 26, 2015 11:41:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 182 Frames not Send: 1
+Jun 26, 2015 11:41:59 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311720005
+Jun 26, 2015 11:42:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311721001
+Jun 26, 2015 11:42:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 183 Frames not Send: 1
+Jun 26, 2015 11:42:00 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311721006
+Jun 26, 2015 11:42:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311722001
+Jun 26, 2015 11:42:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 184 Frames not Send: 1
+Jun 26, 2015 11:42:01 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311722006
+Jun 26, 2015 11:42:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311723002
+Jun 26, 2015 11:42:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 185 Frames not Send: 1
+Jun 26, 2015 11:42:02 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311723007
+Jun 26, 2015 11:42:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311724001
+Jun 26, 2015 11:42:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 186 Frames not Send: 1
+Jun 26, 2015 11:42:03 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311724006
+Jun 26, 2015 11:42:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311725002
+Jun 26, 2015 11:42:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 187 Frames not Send: 1
+Jun 26, 2015 11:42:04 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311725007
+Jun 26, 2015 11:42:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311726000
+Jun 26, 2015 11:42:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 188 Frames not Send: 1
+Jun 26, 2015 11:42:05 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311726005
+Jun 26, 2015 11:42:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311727000
+Jun 26, 2015 11:42:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 189 Frames not Send: 1
+Jun 26, 2015 11:42:06 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311727005
+Jun 26, 2015 11:42:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311728000
+Jun 26, 2015 11:42:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 190 Frames not Send: 1
+Jun 26, 2015 11:42:07 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311728004
+Jun 26, 2015 11:42:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311729000
+Jun 26, 2015 11:42:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 191 Frames not Send: 1
+Jun 26, 2015 11:42:08 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311729005
+Jun 26, 2015 11:42:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311730001
+Jun 26, 2015 11:42:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 192 Frames not Send: 1
+Jun 26, 2015 11:42:09 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311730005
+Jun 26, 2015 11:42:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311731000
+Jun 26, 2015 11:42:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 193 Frames not Send: 1
+Jun 26, 2015 11:42:10 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311731007
+Jun 26, 2015 11:42:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311732000
+Jun 26, 2015 11:42:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 194 Frames not Send: 1
+Jun 26, 2015 11:42:11 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311732007
+Jun 26, 2015 11:42:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311733002
+Jun 26, 2015 11:42:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 195 Frames not Send: 1
+Jun 26, 2015 11:42:12 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311733007
+Jun 26, 2015 11:42:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311734000
+Jun 26, 2015 11:42:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 196 Frames not Send: 1
+Jun 26, 2015 11:42:13 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311734007
+Jun 26, 2015 11:42:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311735001
+Jun 26, 2015 11:42:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 197 Frames not Send: 1
+Jun 26, 2015 11:42:14 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311735007
+Jun 26, 2015 11:42:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311736002
+Jun 26, 2015 11:42:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 198 Frames not Send: 1
+Jun 26, 2015 11:42:15 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311736007
+Jun 26, 2015 11:42:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311737002
+Jun 26, 2015 11:42:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 199 Frames not Send: 1
+Jun 26, 2015 11:42:16 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311737007
+Jun 26, 2015 11:42:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311738001
+Jun 26, 2015 11:42:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 200 Frames not Send: 1
+Jun 26, 2015 11:42:17 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311738008
+Jun 26, 2015 11:42:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311739000
+Jun 26, 2015 11:42:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 201 Frames not Send: 1
+Jun 26, 2015 11:42:18 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311739007
+Jun 26, 2015 11:42:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311740002
+Jun 26, 2015 11:42:19 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 202 Frames not Send: 1
+Jun 26, 2015 11:42:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311740022
+Jun 26, 2015 11:42:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311741000
+Jun 26, 2015 11:42:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 203 Frames not Send: 1
+Jun 26, 2015 11:42:20 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311741004
+Jun 26, 2015 11:42:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311742001
+Jun 26, 2015 11:42:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 204 Frames not Send: 1
+Jun 26, 2015 11:42:21 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311742007
+Jun 26, 2015 11:42:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311743000
+Jun 26, 2015 11:42:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 205 Frames not Send: 1
+Jun 26, 2015 11:42:22 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311743004
+Jun 26, 2015 11:42:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311744003
+Jun 26, 2015 11:42:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 206 Frames not Send: 1
+Jun 26, 2015 11:42:23 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311744011
+Jun 26, 2015 11:42:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311745000
+Jun 26, 2015 11:42:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 207 Frames not Send: 1
+Jun 26, 2015 11:42:24 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311745005
+Jun 26, 2015 11:42:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311746001
+Jun 26, 2015 11:42:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 208 Frames not Send: 1
+Jun 26, 2015 11:42:25 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311746004
+Jun 26, 2015 11:42:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311747001
+Jun 26, 2015 11:42:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 209 Frames not Send: 1
+Jun 26, 2015 11:42:26 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311747009
+Jun 26, 2015 11:42:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311748000
+Jun 26, 2015 11:42:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 210 Frames not Send: 1
+Jun 26, 2015 11:42:27 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311748018
+Jun 26, 2015 11:42:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311749000
+Jun 26, 2015 11:42:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 211 Frames not Send: 1
+Jun 26, 2015 11:42:28 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311749007
+Jun 26, 2015 11:42:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311750000
+Jun 26, 2015 11:42:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 212 Frames not Send: 1
+Jun 26, 2015 11:42:29 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311750004
+Jun 26, 2015 11:42:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311751001
+Jun 26, 2015 11:42:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 213 Frames not Send: 1
+Jun 26, 2015 11:42:30 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311751007
+Jun 26, 2015 11:42:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311752011
+Jun 26, 2015 11:42:31 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 214 Frames not Send: 1
+Jun 26, 2015 11:42:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311752025
+Jun 26, 2015 11:42:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311753000
+Jun 26, 2015 11:42:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 215 Frames not Send: 1
+Jun 26, 2015 11:42:32 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311753009
+Jun 26, 2015 11:42:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311754002
+Jun 26, 2015 11:42:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 216 Frames not Send: 1
+Jun 26, 2015 11:42:33 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311754007
+Jun 26, 2015 11:42:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311755003
+Jun 26, 2015 11:42:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 217 Frames not Send: 1
+Jun 26, 2015 11:42:34 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311755008
+Jun 26, 2015 11:42:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311756000
+Jun 26, 2015 11:42:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 218 Frames not Send: 1
+Jun 26, 2015 11:42:35 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311756005
+Jun 26, 2015 11:42:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: after all Spots1435311757002
+Jun 26, 2015 11:42:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Receiver: team 07-22 Frames Send: 219 Frames not Send: 1
+Jun 26, 2015 11:42:36 AM de.ants.vsp.receiver.Datensenke logMessageSevere
+SEVERE: team 07-22: Time: at Beginning of new Spot1435311757012
