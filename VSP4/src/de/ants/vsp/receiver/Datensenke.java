@@ -15,7 +15,7 @@ public class Datensenke {
 	
 	public Datensenke(String name) throws SecurityException, IOException{
 		logger = Logger.getLogger("VSP");
-		logger.setLevel(Level.SEVERE);
+		logger.setLevel(Level.INFO);
 		logger.setUseParentHandlers(false);
 //		 This block configure the logger with handler and formatter  
         fh = new FileHandler("./" +  name +  ".log");  
